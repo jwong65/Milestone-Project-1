@@ -1,7 +1,8 @@
-let Playerhealth = document.getElementById('health').value
-function displayHealth(Playerhealth){
-    console.log(Playerhealth)
-    document.getElementById('health').textContent = String(Playerhealth)
+var playerhealth = 100
+function displayHealth(playerhealth){
+    console.log(playerhealth)
+    let playerhealth = document.getElementById('health').textContent = String(playerhealth)
+    document.getElementById('health').innerHTML= playerhealth;
 }
 
 displayHealth()
