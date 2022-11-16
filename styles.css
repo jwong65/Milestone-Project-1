@@ -1,9 +1,7 @@
 div{
     background-color: chartreuse;
     border: 2px solid black;
-    height:200px;
-    width: 25vw;
-
+    
     padding: 25px 25px 25px 50px;
     
     /*padding-top: 25px;
@@ -19,12 +17,18 @@ div{
     position: relative;
     left: 20px;
     z-index: 0;
+    height:200px;
+    width: 25vw;
+
 }
 #player{
     position: relative;
     left: 1150px;
     top: 200px;
     z-index: 0;
+    height:200px;
+    width: 25vw;
+
 }
 .health{
     border: 2px solid black;
@@ -33,4 +37,9 @@ div{
     position: relative;
     width: 1px;
     background-color: red;
+}
+#newgame{
+    height: 35px;
+    width: 40px;
+    text-align: center;
 }

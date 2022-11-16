@@ -8,3 +8,4 @@ function displayHealth(healthnum, idname){
 
 displayHealth(playerhealth, "health")
 displayHealth(enemyhealth, "opphealth")
+
