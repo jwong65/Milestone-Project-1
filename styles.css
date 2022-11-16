@@ -39,7 +39,6 @@ div{
     background-color: red;
 }
 #newgame{
-    height: 35px;
-    width: 40px;
+    background-color: chartreuse;
     text-align: center;
 }
