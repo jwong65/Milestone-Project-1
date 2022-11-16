@@ -15,13 +15,22 @@ div{
     margin: 15px;
 }
 #opponent{
-    font-size: 32px;
     color: antiquewhite;
     position: relative;
     left: 20px;
+    z-index: 0;
 }
 #player{
     position: relative;
     left: 1150px;
     top: 200px;
+    z-index: 0;
+}
+.health{
+    border: 2px solid black;
+    height: 1px;
+    z-index: 1;
+    position: relative;
+    width: 1px;
+    background-color: red;
 }
