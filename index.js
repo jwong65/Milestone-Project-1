@@ -9,3 +9,10 @@ function displayHealth(healthnum, idname){
 displayHealth(playerhealth, "health")
 displayHealth(enemyhealth, "opphealth")
 
+//This will need to be put into a function eventually
+document.getElementById("newgame").addEventListener("mouseover",()=>{
+    document.getElementById("newgame").style.backgroundColor ="#9932c9"
+})
+document.getElementById("newgame").addEventListener("mouseout",()=>{
+    document.getElementById('newgame').style.backgroundColor="chartreuse"
+})
