@@ -17,4 +17,11 @@ div{
 #opponent{
     font-size: 32px;
     color: antiquewhite;
+    position: relative;
+    left: 20px;
+}
+#player{
+    position: relative;
+    left: 1150px;
+    top: 200px;
 }
