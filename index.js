@@ -21,3 +21,6 @@ document.getElementById("newgame").addEventListener("mouseout",()=>{
     document.getElementById('newgame').style.backgroundColor="chartreuse"
 })
 
+document.getElementById('showdeck').addEventListener('click', ()=>{
+    displayInformation("Your current deck is:", "info")
+})
