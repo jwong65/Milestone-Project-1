@@ -19,3 +19,4 @@ displayHealth(enemyhealth, "opphealth")
 // document.getElementById("newgame").addEventListener("mouseout",()=>{
 //     document.getElementById('newgame').style.backgroundColor="chartreuse"
 // })
+

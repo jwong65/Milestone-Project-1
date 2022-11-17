@@ -28,18 +28,17 @@ function displayInformation(input, location){
 
 displayInformation("This is the opening hand.", "info")
  
-
-
 //Using newInventory from the JS-Web-Game assignments as a basis.
 
 function newHand(){
-    let hand = document.createElement('word')
+    let hand = document.createElement('div')
     hand.style.width = '50%'
     hand.style.height = '100px';
     hand.style.display ='flex'
     hand.style.flexDirection = 'row'
     hand.style.alignItems = 'center'
     hand.style.justifyContent = 'center'
+    hand.setAttribute('id', 'hand')
     //This border will be for testing
     hand.style.border = '1px solid black'
     hand.style.backgroundColor = 'yellow'
@@ -47,14 +46,19 @@ function newHand(){
     document.body.append(hand)
     return hand
 }
-newHand()
 
-function newCard(deck, url){
-    let draw = deck[getRndInteger(0,0)]
+const drawHand = newHand()
+//append only works if there's an Node object/String object being passed?
+
+function newCard(deck){
+    //getRndInteger(0,0)
+    let draw = deck[0]
     let newImage = document.createElement('img')
-    newImage.src = url
-    //hand.append(newImage)
+    newImage.src = "./35_EN_45.png"
+    document.getElementById('hand').appendChild(newImage)
     displayInformation(draw.text, "info")
-}
 
-newCard(deck, "./SM35_EN_45.png")
+}
+newCard(deck)
+// document.getElementById('newgame').addEventListener('click', newCard(deck, "./SM35_EN_45.png"))
+
