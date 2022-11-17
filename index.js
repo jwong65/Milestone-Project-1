@@ -1,6 +1,7 @@
 var playerhealth = 100
 var enemyhealth =100
 
+newHand()
 // console.log(playerhealth)
 
 function displayHealth(healthnum, idname){
