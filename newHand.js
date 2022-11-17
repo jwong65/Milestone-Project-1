@@ -50,6 +50,7 @@ function newHand(){
 const drawHand = newHand()
 //append only works if there's an Node object/String object being passed?
 
+//This is a placeholder to see if I can add a newCard from deck to hand.
 function newCard(deck){
     //getRndInteger(0,0)
     let draw = deck[0]

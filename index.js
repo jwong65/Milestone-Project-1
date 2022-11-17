@@ -1,5 +1,5 @@
-var playerhealth = 100
-var enemyhealth =100
+var playerhealth = 20
+var enemyhealth = 20
 
 // console.log(playerhealth)
 
