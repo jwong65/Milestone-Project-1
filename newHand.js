@@ -54,7 +54,7 @@ function newCard(deck){
     //getRndInteger(0,0)
     let draw = deck[0]
     let newImage = document.createElement('img')
-    newImage.src = "./35_EN_45.png"
+    newImage.src = "assets/SM35_EN_45.png"
     document.getElementById('hand').appendChild(newImage)
     displayInformation(draw.text, "info")
 
