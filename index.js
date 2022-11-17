@@ -20,4 +20,9 @@ document.getElementById("newgame").addEventListener("mouseout",()=>{
 
 //Need a function call for information everything something changes.
 
+function displayInformation(input){
+    let textbox = input
+    document.getElementById('info').innerHTML = textbox;
+}
 
+// displayInformation("This is now changing.")

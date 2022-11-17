@@ -42,8 +42,12 @@ div{
     background-color: chartreuse;
     text-align: center;
 }
+#next{
+    background-color: antiquewhite;
+}
 
-.info{
+#info{
     width: 45vw;
     text-align: center;
 }
+
