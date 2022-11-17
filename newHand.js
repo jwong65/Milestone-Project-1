@@ -11,6 +11,7 @@ function newHand(){
     //This border will be for testing
     hand.style.border = '1px solid black'
     hand.style.backgroundColor = 'yellow'
+    
     document.body.append(hand)
 }
 newHand()
