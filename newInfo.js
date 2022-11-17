@@ -6,4 +6,4 @@ function displayInformation(input){
     document.getElementById('info').innerHTML = textbox;
 }
 
-// displayInformation("This is now changing.")
+displayInformation("This is the opening hand.")
