@@ -41,6 +41,8 @@ div{
 #newgame{
     background-color: chartreuse;
     text-align: center;
+    position: absolute;
+    bottom: 50px;
 }
 #next{
     background-color: antiquewhite;

@@ -13,10 +13,11 @@ displayHealth(enemyhealth, "opphealth")
 // Display Health should be invoked everytime there's a change in the system.
 
 //This will need to be put into a function eventually
-// document.getElementById("newgame").addEventListener("mouseover", ()=>{
-//     document.getElementById("newgame").style.backgroundColor ="#9932c9"
-// })
-// document.getElementById("newgame").addEventListener("mouseout",()=>{
-//     document.getElementById('newgame').style.backgroundColor="chartreuse"
-// })
+
+document.getElementById("newgame").addEventListener("mouseover", ()=>{
+    document.getElementById("newgame").style.backgroundColor ="#9932c9"
+})
+document.getElementById("newgame").addEventListener("mouseout",()=>{
+    document.getElementById('newgame').style.backgroundColor="chartreuse"
+})
 
