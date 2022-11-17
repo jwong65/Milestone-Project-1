@@ -42,3 +42,8 @@ div{
     background-color: chartreuse;
     text-align: center;
 }
+
+.info{
+    width: 45vw;
+    text-align: center;
+}

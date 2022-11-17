@@ -8,6 +8,7 @@ function displayHealth(healthnum, idname){
 
 displayHealth(playerhealth, "health")
 displayHealth(enemyhealth, "opphealth")
+// Display Health should be invoked everytime there's a change in the system.
 
 //This will need to be put into a function eventually
 document.getElementById("newgame").addEventListener("mouseover",()=>{
@@ -16,3 +17,7 @@ document.getElementById("newgame").addEventListener("mouseover",()=>{
 document.getElementById("newgame").addEventListener("mouseout",()=>{
     document.getElementById('newgame').style.backgroundColor="chartreuse"
 })
+
+//Need a function call for information everything something changes.
+
+
