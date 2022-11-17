@@ -38,6 +38,8 @@ const card1 ={
     value: "5",
     text: "This card will heal you for 5 health"
 }
+deck.push(card1)
+console.log(deck)
 
 
 
