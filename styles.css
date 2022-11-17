@@ -44,6 +44,10 @@ div{
     position: absolute;
     bottom: 50px;
 }
+#showdeck{
+    position: absolute;
+    bottom: 100px;
+}
 #next{
     background-color: antiquewhite;
 }
