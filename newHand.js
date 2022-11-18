@@ -8,6 +8,9 @@ const card1 ={
 }
 deck.push(card1)
 console.log(deck)
+
+//Need a const discardpile = [], that way I can pop cards out and have a length of the deck 
+
 //A fucntion is needed to generate cards.
 //I'm thinking of using an array to keep track of what cards the player has.
 
@@ -74,6 +77,9 @@ function newCard(deck){
     console.log(draw.text)
     newImage.addEventListener('mouseover',()=>{
         displayInformation( draw.text, "info")
+    })
+    newImage.addEventListener('mouseout', ()=>{
+        displayInformation("You have "+ deck.length +" cards in your deck" , "info")
     })
 
 }
