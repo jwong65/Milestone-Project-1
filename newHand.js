@@ -71,7 +71,6 @@ function newCard(deck){
     newImage.style.height ='100px'
     document.getElementById('hand').appendChild(newImage)
     //We do not want the information to be displayed just yet
-    //displayInformation(draw.text, "info")
     console.log(draw.text)
     newImage.addEventListener('mouseover',()=>{
         displayInformation( draw.text, "info")

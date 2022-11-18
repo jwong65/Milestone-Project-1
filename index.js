@@ -14,18 +14,18 @@ displayHealth(enemyhealth, "opphealth")
 
 //This will need to be put into a function eventually
 
-document.getElementById("newgame").addEventListener("mouseover", ()=>{
-    document.getElementById("newgame").style.backgroundColor ="#9932c9"
-})
-document.getElementById("newgame").addEventListener("mouseout",()=>{
-    document.getElementById('newgame').style.backgroundColor="chartreuse"
-})
+    document.getElementById("newgame").addEventListener("mouseover", ()=>{
+        document.getElementById("newgame").style.backgroundColor ="#9932c9"
+    })
+    document.getElementById("newgame").addEventListener("mouseout",()=>{
+        document.getElementById('newgame').style.backgroundColor="chartreuse"
+    })
 
 document.getElementById('showdeck').addEventListener('click', ()=>{
     displayInformation("Your current deck is:", "info")
 })
 
 document.getElementById('rules').addEventListener('click',()=>{
-    displayInformation("To begin you have 5 cards in your deck and are allowed to draw once per turn. If you draw for the turn your turn ends. You are allowed to play up to 3 cards per turn before it ends (unless extended by effects). If you want to end your turn prematurely, use the end turn button.", "info")
+    displayInformation("To begin you have 5 cards in your deck and are allowed to draw once per turn. If you draw for the turn your turn ends. You are allowed to play up to 3 cards per turn before it ends (unless extended by effects). If you want to end your turn prematurely, use the end turn button. If you do not have any cards in your deck you cannot draw a card.", "info")
 })
 //

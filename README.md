@@ -32,6 +32,7 @@ Post-MVP I would also like to implement a rogue-like element, what I want to tak
 - Having the game understand when the player has no more moves prior to the turn ending
 - Having the deck be randomized that way the draw is not the same throughout each playthrough
 - Having multiple opponents instead of just the 1 with different behaviors.
+- Having a table to help clean up the interface of the playfield.
 
 ### Project Planning
 
