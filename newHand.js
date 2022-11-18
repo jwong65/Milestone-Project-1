@@ -1,15 +1,12 @@
 //Need a const deck = []
 //The cards will need to be objects that way they have infomration in them
 const deck =[]
-const card1 ={
-    type: "Heal",
-    value: "5",
-    text: "This card will heal you for 5 health"
-}
-deck.push(card1)
-console.log(deck)
+
+//console.log(deck)
 
 //Need a const discardpile = [], that way I can pop cards out and have a length of the deck 
+
+const discardpile=[]
 
 //A fucntion is needed to generate cards.
 //I'm thinking of using an array to keep track of what cards the player has.
@@ -20,6 +17,16 @@ function cardCreation(type, value, text){
     this.value =value
     this.text = text
 }
+const card1 = new cardCreation('heal', '5', 'This card will heal you for 5 health')
+// This is now the way to create cards instead of using the const creating an object
+// const card1 ={
+//     type: "Heal",
+//     value: "5",
+//     text: "This card will heal you for 5 health"
+// }
+deck.push(card1)
+
+// const card2 = new cardCreation()
 
 //From W3Schools I used the formula to help get a random number. This function will get a random integer between the min and the max
 //Math.floor is used to get rid of the decimal points that Math.random() will provide.
