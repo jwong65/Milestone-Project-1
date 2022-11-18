@@ -66,10 +66,16 @@ function newCard(deck){
     let draw = deck[0]
     let newImage = document.createElement('img')
     newImage.src ='assets/cardBorder.jpg'
+    //newImage.src = URL, this will just be a placeholder for now until I can find an image for the cards so it won't be confusing
+
     newImage.style.height ='100px'
     document.getElementById('hand').appendChild(newImage)
     //We do not want the information to be displayed just yet
     //displayInformation(draw.text, "info")
+    console.log(draw.text)
+    newImage.addEventListener('mouseover',()=>{
+        displayInformation( draw.text, "info")
+    })
 
 }
 // For testing purpose adding additional cards to see where they will be appended
