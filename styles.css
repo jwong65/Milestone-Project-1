@@ -43,6 +43,9 @@ div{
     
 }
 #info{
+    position: absolute;
+    top: 355px;
+
     width: 45vw;
     text-align: center;
 }

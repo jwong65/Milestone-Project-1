@@ -26,6 +26,6 @@ document.getElementById('showdeck').addEventListener('click', ()=>{
 })
 
 document.getElementById('rules').addEventListener('click',()=>{
-    displayInformation("To begin you have 5 cards in your deck and are allowed to draw once per turn. If you draw for the turn your turn ends.", "info")
+    displayInformation("To begin you have 5 cards in your deck and are allowed to draw once per turn. If you draw for the turn your turn ends. You are allowed to play up to 3 cards per turn before it ends (unless extended by effects). If you want to end your turn prematurely, use the end turn button.", "info")
 })
 //
