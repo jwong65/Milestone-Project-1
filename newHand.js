@@ -33,7 +33,7 @@ function displayInformation(input, location){
     document.getElementById(location).innerHTML = textbox;
 }
 
-displayInformation("This is the opening hand.", "info")
+displayInformation("This is your opening hand.", "info")
  
 //Using newInventory from the JS-Web-Gameimage.pngimage.png assignments as a basis.
 

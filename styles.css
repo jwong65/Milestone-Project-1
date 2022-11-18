@@ -56,15 +56,17 @@ div{
     position: absolute;
     bottom: 50px;
 }
-#showdeck{
+#showdeck, #draw, #rules{
     position: absolute;
     bottom: 100px;
-}
-#next{
-    background-color: antiquewhite;
 }
 #draw{
-    position: absolute;
-    bottom: 100px;
     left: 100px;
 }
+#rules{
+    left:150px;
+}
+/* 
+#next{
+    background-color: antiquewhite;
+} */

@@ -24,3 +24,8 @@ document.getElementById("newgame").addEventListener("mouseout",()=>{
 document.getElementById('showdeck').addEventListener('click', ()=>{
     displayInformation("Your current deck is:", "info")
 })
+
+document.getElementById('rules').addEventListener('click',()=>{
+    displayInformation("To begin you have 5 cards in your deck and are allowed to draw once per turn. If you draw for the turn your turn ends.", "info")
+})
+//
