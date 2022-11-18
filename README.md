@@ -20,7 +20,7 @@ The player will achieve victory when they drop the opponent's life total to zero
 - The life totals must be able to be interacted with using the effects of the cards
 - The opponent must be able to have their own turn and play similar cards to the player
 - The player must be able to end their turn with a button or clause
-- The player will be prompted whether they want to use a card or not when they click on the card
+- The player will be prompted whether they want to end their turn when they press the end turn button.
 
 ### Post-MVP Plans
 
