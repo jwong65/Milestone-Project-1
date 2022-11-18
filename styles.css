@@ -32,12 +32,24 @@ div{
 }
 .health{
     border: 2px solid black;
-    height: 1px;
     z-index: 1;
     position: relative;
     width: 1px;
+    text-align: center;
     background-color: red;
 }
+
+#hand{
+    
+}
+#info{
+    width: 45vw;
+    text-align: center;
+}
+
+
+/* Buttons */
+
 #newgame{
     background-color: chartreuse;
     text-align: center;
@@ -51,11 +63,8 @@ div{
 #next{
     background-color: antiquewhite;
 }
-#hand{
-    
+#draw{
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
 }
-#info{
-    width: 45vw;
-    text-align: center;
-}
-
