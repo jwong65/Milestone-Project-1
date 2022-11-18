@@ -35,7 +35,7 @@ function displayInformation(input, location){
 
 displayInformation("This is the opening hand.", "info")
  
-//Using newInventory from the JS-Web-Game assignments as a basis.
+//Using newInventory from the JS-Web-Gameimage.pngimage.png assignments as a basis.
 
 function newHand(){
     let hand = document.createElement('div')
@@ -44,11 +44,14 @@ function newHand(){
     hand.style.display ='flex'
     hand.style.flexDirection = 'row'
     hand.style.alignItems = 'center'
-    hand.style.justifyContent = 'center'
+    //justifyContent placed all the cards in the center but I think space-evenly or space-betwen can be used
+    hand.style.justifyContent = 'space-evenly'
+    //hand.style.justifyContent ='center'
+    
     hand.setAttribute('id', 'hand')
     //This border will be for testing
     hand.style.border = '1px solid black'
-    hand.style.backgroundColor = 'yellow'
+    hand.style.backgroundColor = 'beige'
     
     document.body.append(hand)
     return hand
@@ -69,6 +72,11 @@ function newCard(deck){
     //displayInformation(draw.text, "info")
 
 }
+// For testing purpose adding additional cards to see where they will be appended
 newCard(deck)
+newCard(deck)
+newCard(deck)
+
+
 // document.getElementById('newgame').addEventListener('click', newCard(deck, "./SM35_EN_45.png"))
 
