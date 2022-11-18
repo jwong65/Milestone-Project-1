@@ -11,6 +11,13 @@ console.log(deck)
 //A fucntion is needed to generate cards.
 //I'm thinking of using an array to keep track of what cards the player has.
 
+//This constructor will be used to create cards
+function cardCreation(type, value, text){
+    this.type = type
+    this.value =value
+    this.text = text
+}
+
 //From W3Schools I used the formula to help get a random number. This function will get a random integer between the min and the max
 //Math.floor is used to get rid of the decimal points that Math.random() will provide.
 function getRndInteger(min, max) {
