@@ -62,9 +62,11 @@ function newCard(deck){
     //getRndInteger(0,0)
     let draw = deck[0]
     let newImage = document.createElement('img')
-    //newImage.src = "assets/SM35_EN_45.png"
+    newImage.src ='assets/cardBorder.jpg'
+    newImage.style.height ='100px'
     document.getElementById('hand').appendChild(newImage)
-    displayInformation(draw.text, "info")
+    //We do not want the information to be displayed just yet
+    //displayInformation(draw.text, "info")
 
 }
 newCard(deck)
