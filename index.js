@@ -21,10 +21,11 @@ displayHealth(enemyhealth, "opphealth")
         document.getElementById('newgame').style.backgroundColor="chartreuse"
     })
 
+//This is the eventListener for the button that will show you how many cards are in your deck
 document.getElementById('showdeck').addEventListener('click', ()=>{
-    displayInformation("Your current deck is:", "info")
+    displayInformation("Your deck currently has " + deck.length + " card(s).", "info")
 })
-
+//This is the rules eventListener for the button, it will show you the rules in the information box once you click on this button
 document.getElementById('rules').addEventListener('click',()=>{
     displayInformation("To begin you have 5 cards in your deck and are allowed to draw once per turn. If you draw for the turn your turn ends. You are allowed to play up to 3 cards per turn before it ends (unless extended by effects). If you want to end your turn prematurely, use the end turn button. If you do not have any cards in your deck you cannot draw a card.", "info")
 })

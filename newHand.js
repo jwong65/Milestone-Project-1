@@ -86,7 +86,7 @@ function newCard(deck){
         displayInformation( draw.text, "info")
     })
     newImage.addEventListener('mouseout', ()=>{
-        displayInformation("You have "+ deck.length +" cards in your deck" , "info")
+        displayInformation("Your deck currently has " + deck.length + " card(s)." , "info")
     })
 
 }
