@@ -6,14 +6,13 @@
 
 For the webgame project I was inspired to make a card game. As I decided on what type of game it would be I decided that it could not be a game like MTG or Yu-gi-oh, because the complexity of responding to your opponent would be difficult to keep track and have responses to. In terms of digital card games I used games like Hearthstone/Shadowverse as a big inspiration. The basic 20 health counter comes from Shadowverse, but Hearthstone's 30 could also be used. The RPG Paper Mario's combat system also gave me inspiration that the numbers for health should be kept at a minimum to allow for further complexity if I get to it post-MVP. Instead of having a boardbased cardgame with creatures, monsters, or followers I wanted to simplify it with your own health total and varying attribute changes, I was inspired by the digital boardgame 100% Orange Juice. 
 
----
+
 ## Game Logic
 
-```
 The player is given an opening deck of cards and is given the first option to make a turn. The player has the option to use whatever cards are given through the hand. When the player makes a choice they will be able to see the effect of the card being played on in that instance.
 
 The player will achieve victory when they drop the opponent's life total to zero. The player will be given a defeat if their life total drops to zero.
-```
+
 ### MVP Criteria
 
 - The game must be able to have a draw function to add cards to the hand
