@@ -41,5 +41,5 @@ Post-MVP I would also like to implement a rogue-like element, what I want to tak
 | Thursday 11/17 | Updated README.md |
 | Sunday 11/20 | Work on implementing the cards |
 | Tuesday 11/22 | |
-| Tuesday 11/29 | |
-| Thursday 12/01 | |
+| Tuesday 11/29 | Deployment to GitHub Pages|
+| Thursday 12/01 | Submit project and presentation |
