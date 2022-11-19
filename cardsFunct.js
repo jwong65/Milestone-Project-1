@@ -13,3 +13,6 @@ function card1Function(card1, directedHealth, target){
     }
 }
 //An example of the card1 being use - card1Function(card1, playerhealth, "HP")
+function card2Function(card2, directedHealth, target){
+    
+}

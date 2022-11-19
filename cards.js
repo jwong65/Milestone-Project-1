@@ -10,8 +10,10 @@ function cardCreation(type, value, text){
     this.value =value
     this.text = text
 }
-const card1 = new cardCreation('heal', 5, 'This card will heal you for 5 health')
+
 // This is now the way to create cards instead of using the const creating an object
+//First set of cards 1-5. The beginning section.
+const card1 = new cardCreation('heal', 5, 'This card will heal you for 5 health')
 const card2 = new cardCreation('damage', 2, "This card does 2 damage to your opponent")
 const card3 = new cardCreation('block', 1, "The next attack you take will be reduced by 1.")
 const card4 = new cardCreation('recycle', null, "All cards in the discard pile are shuffled back into the deck. This card cannot be discarded.")
