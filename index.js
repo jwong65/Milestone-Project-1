@@ -5,7 +5,7 @@ var turnNumber = 1
 
 function displayHealth(healthnum, idname){
     let innerHealth = healthnum
-    document.getElementById(idname).innerHTML= innerHealth;
+    document.getElementById(idname).textContent=innerHealth
 }
 //A function is going to be needed to confirm whether the player wants to play a card. This may seem a bit bunch because I feel like it will interupt the flow of the game
 //Using confirm() from W3Schools you can put a variable to be output if you want the confirm box to show, but I have the displayInformation function so that is not neccesary
@@ -25,23 +25,27 @@ function DrawEndTurn(text){
         return
     }
 }
+//Currently this has no use case, but there should be a scenario where the turn will end because of a condition.
+function endTurn(){
+    displayInformation('The turn has ended.', 'info')
+}
 //This is a function that will always be called to keep track of how many cards are in your hand. In case you do not want to count yourself. It will also come in handy for cards that rely on the hand count
 function displayCardsinHand(){
     document.getElementById('NumCardsHand').textContent = "Cards currently in hand: " + hand.length
 }
 displayCardsinHand()
-displayHealth(playerhealth, "health")
+displayHealth(playerhealth, "HP")
 displayHealth(enemyhealth, "opphealth")
 // Display Health should be invoked everytime there's a change in the system.
 
 //This will need to be put into a function eventually
 
-    document.getElementById("newgame").addEventListener("mouseover", ()=>{
-        document.getElementById("newgame").style.backgroundColor ="#9932c9"
-    })
-    document.getElementById("newgame").addEventListener("mouseout",()=>{
-        document.getElementById('newgame').style.backgroundColor="chartreuse"
-    })
+    // document.getElementById("newgame").addEventListener("mouseover", ()=>{
+    //     document.getElementById("newgame").style.backgroundColor ="#9932c9"
+    // })
+    // document.getElementById("newgame").addEventListener("mouseout",()=>{
+    //     document.getElementById('newgame').style.backgroundColor="chartreuse"
+    // })
 
 //This is the eventListener for the button that will show you how many cards are in your deck
 document.getElementById('showdeck').addEventListener('click', ()=>{
