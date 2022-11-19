@@ -88,6 +88,9 @@ function newCard(deck){
     newImage.addEventListener('mouseout', ()=>{
         displayInformation("Your deck currently has " + deck.length + " card(s)." , "info")
     })
+    // newImage.addEventListener('click',{
+
+    // })
 
 }
 // For testing purpose adding additional cards to see where they will be appended
