@@ -80,6 +80,7 @@ function newCard(deck, handarr){
     //A case must be made if there aren't any cards left in the deck to draw from
     if (deck.length ==0){
         displayInformation("There are no more cards to draw or search in your deck.", "info")
+        return
     }
     let top_of_deck = Number(deck.length-1)
     let draw = deck[top_of_deck]
@@ -90,7 +91,8 @@ function newCard(deck, handarr){
     newImage.style.height ='100px'
     document.getElementById('hand').appendChild(newImage);
     //We do not want the information to be displayed just yet
-    console.log(draw.text)//Draw is undefined, because top_of_deck needs to be deck.length-1.
+    //Draw was undefined, because top_of_deck needs to be deck.length-1.
+    //console.log(draw.text)
     newImage.addEventListener('mouseover',()=>{
         displayInformation(draw.text, "info")
     })

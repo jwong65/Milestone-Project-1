@@ -18,7 +18,6 @@ function endTurn(text){
     if (confirm(text)){
      displayInformation("Turn has ended.", "info")
         console.log("Turn "+ turnNumber+ " Ended")
-        turnNumber++
     } else{
         return
     }
@@ -52,7 +51,9 @@ document.getElementById('endturn').addEventListener('click', ()=>{
 //The eventListener for the draw cards button is similar to the endTurn button because drawing ends the turn
 //Event listener should draw a card, that will be done later.
 document.getElementById('draw').addEventListener('click', ()=>{
-    endTurn("Draw one card and end your turn?")
+    //Currently commenting out endTurn so I can test quicker.
+    //endTurn("Draw one card and end your turn?")
     //Currently does not have the cancel button working right now
     newCard(deck, hand)
+    turnNumber++
 })
