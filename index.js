@@ -22,7 +22,11 @@ function endTurn(text){
         return
     }
 }
-
+//This is a function that will always be called to keep track of how many cards are in your hand. In case you do not want to count yourself. It will also come in handy for cards that rely on the hand count
+function displayCardsinHand(){
+    document.getElementById('NumCardsHand').textContent = "Cards currently in hand: " + hand.length
+}
+displayCardsinHand()
 displayHealth(playerhealth, "health")
 displayHealth(enemyhealth, "opphealth")
 // Display Health should be invoked everytime there's a change in the system.
@@ -55,5 +59,7 @@ document.getElementById('draw').addEventListener('click', ()=>{
     endTurn("Draw one card and end your turn?")
     //Currently does not have the cancel button working right now
     newCard(deck, hand)
+    displayCardsinHand()
     turnNumber++
+
 })
