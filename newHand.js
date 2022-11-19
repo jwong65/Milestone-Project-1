@@ -36,7 +36,7 @@ var deck =[]
 //Need a discardpile = [], that way I can pop cards out and have a length of the deck 
 //Another const hand =[] will be needed so I can keep track of how many cards are in the hand
 var discardpile=[]
-var hand=[]
+var playerHand=[]
 //I'm thinking of using an array to keep track of what cards the player has.
 
 //This generation is to create the first deck.
@@ -51,8 +51,11 @@ deck.push(card1, card2, card3, card4, card5)
 function shuffleDeck(deck){
     return deck.sort(()=> Math.random()-.5)
 }
+
 deck = shuffleDeck(deck)
-console.log(deck)
+//This first call of shuffleDeck is to ensure that the beginning hand of every game will be different.
+
+
 //Using newInventory from the JS-Web-Gameimage.pngimage.png assignments as a basis for newHand which is how drawing cards will be put in a function.
 function newHand(){
     let hand = document.createElement('div')
@@ -110,7 +113,8 @@ function newCard(deck, handarr){
     
 }
 // For testing purpose adding additional cards to see where they will be appended
-newCard(deck, hand)
-newCard(deck, hand)
-newCard(deck, hand)
+newCard(deck, playerHand)
+newCard(deck, playerHand)
+newCard(deck, playerHand)
+console.log(playerHand)
 
