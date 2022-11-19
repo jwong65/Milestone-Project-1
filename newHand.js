@@ -91,7 +91,7 @@ const drawHand = newHand()
 //append only works if there's an Node object/String object being passed?
 
 //This is a placeholder to see if I can add a newCard from deck to hand.
-function newCard(deck){
+function newCard(deck, handarr){
     //getRndInteger(0,0)
     let draw = deck[0]
     let newImage = document.createElement('img')
@@ -99,9 +99,9 @@ function newCard(deck){
     //newImage.src = URL, this will just be a placeholder for now until I can find an image for the cards so it won't be confusing
 
     newImage.style.height ='100px'
-    document.getElementById('hand').appendChild(newImage)
+    document.getElementById('hand').appendChild(newImage);
     //We do not want the information to be displayed just yet
-    console.log(draw.text)
+    //console.log(draw.text)
     newImage.addEventListener('mouseover',()=>{
         displayInformation( draw.text, "info")
     })
@@ -109,14 +109,19 @@ function newCard(deck){
         displayInformation("Your deck currently has " + deck.length + " card(s)." , "info")
     })
     // newImage.addEventListener('click',{
-
-    // })
-
+    let drawnCard = deck.pop()
+    //Testing for hand array having the card that is popped from the deck
+    console.log("The deck is", deck)
+    console.log("The card ripped from the deck is", drawnCard)
+    handarr.push(drawnCard)
+    console.log("The hand is now ",handarr)
+    
 }
 // For testing purpose adding additional cards to see where they will be appended
-newCard(deck)
-newCard(deck)
-newCard(deck)
+newCard(deck, hand)
+//newCard(deck, hand)
+//newCard(deck, hand)
+
 
 // document.getElementById('newgame').addEventListener('click', newCard(deck, "./SM35_EN_45.png"))
 
