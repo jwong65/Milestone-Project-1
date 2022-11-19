@@ -38,7 +38,7 @@ var deck =[]
 const discardpile = []
 
 const hand = []
-console.log(hand)
+//console.log(hand)
 //I'm thinking of using an array to keep track of what cards the player has.
 
 //This generation is to create the first deck.
@@ -108,9 +108,9 @@ function newCard(deck, hand){
     })
     let drawnCard = deck.pop()
     //Testing for hand array having the card that is popped from the deck
-    console.log("The deck is", deck)
-    console.log("The card ripped from the deck is", drawnCard)
-    console.log(hand)
+    // console.log("The deck is", deck)
+    // console.log("The card ripped from the deck is", drawnCard)
+    // console.log(hand)
 
 
     hand.push(drawnCard)
