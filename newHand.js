@@ -99,7 +99,7 @@ function newCard(deck, hand){
     document.getElementById('hand').appendChild(newImage);
     //We do not want the information to be displayed just yet
     //Draw was undefined, because top_of_deck needs to be deck.length-1.
-    //console.log(draw.text)
+    //console.log(draw.text
     newImage.addEventListener('mouseover',()=>{
         displayInformation(draw.text, "info")
     })

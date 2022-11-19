@@ -2,15 +2,15 @@ div{
     background-color: chartreuse;
     border: 2px solid black;
     
+    text-align: center;
     padding: 25px 25px 25px 50px;
-    
+    margin: 15px;
     /*padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 50px;
     */
 
-    margin: 15px;
 }
 #opponent{
     color: antiquewhite;
@@ -19,6 +19,7 @@ div{
     z-index: 0;
     height:200px;
     width: 25vw;
+    text-align: center;
 
 }
 #player{
@@ -28,6 +29,7 @@ div{
     z-index: 0;
     height:200px;
     width: 25vw;
+    text-align: center;
 
 }
 .health{
@@ -38,16 +40,16 @@ div{
     text-align: center;
     background-color: red;
 }
-
-#hand{
-    
-}
 #info{
     position: absolute;
     top: 355px;
     width: 45vw;
     text-align: center;
 }
+/* 
+#hand{
+    
+} */
 
 
 /* Buttons */
