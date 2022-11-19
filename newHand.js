@@ -50,6 +50,7 @@ deck.push(card1)
 
 //From W3Schools I used the formula to help get a random number. This function will get a random integer between the min and the max
 //Math.floor is used to get rid of the decimal points that Math.random() will provide.
+//https://www.w3schools.com/js/js_random.asp
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
  }
@@ -92,6 +93,12 @@ const drawHand = newHand()
 
 //This is a placeholder to see if I can add a newCard from deck to hand.
 function newCard(deck, handarr){
+    //A case must be made if there aren't any cards left in the deck to draw from
+    if (deck.length ===0){
+        displayInformation("There are no more cards to draw or search in your deck.", "info")
+        return
+    }
+
     //getRndInteger(0,0)
     let draw = deck[0]
     let newImage = document.createElement('img')

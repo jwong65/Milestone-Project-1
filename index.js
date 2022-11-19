@@ -12,6 +12,8 @@ function displayHealth(healthnum, idname){
 //I also considered prompt(), but I would rather the user not have to put yes or no
 //Consideration was also put for whether the user wanted to play a card or not but that stops the flow of the game and can become very irritating without the option to remove it
 //endTurn function should also signal the beginning for the opponent's turn
+//https://www.w3schools.com/js/js_popup.asp
+
 function endTurn(text){
     if (confirm(text)){
      displayInformation("Turn has ended.", "info")
