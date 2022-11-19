@@ -14,7 +14,7 @@ function displayHealth(healthnum, idname){
 //endTurn function should also signal the beginning for the opponent's turn
 //https://www.w3schools.com/js/js_popup.asp
 
-function endTurn(text){
+function DrawEndTurn(text){
     if (confirm(text)){
      displayInformation("Turn has ended.", "info")
         console.log("Turn "+ turnNumber+ " Ended")
@@ -59,6 +59,6 @@ document.getElementById('endturn').addEventListener('click', ()=>{
 //Event listener should draw a card, that will be done later.
 document.getElementById('draw').addEventListener('click', ()=>{
     //Currently commenting out endTurn so I can test quicker.
-    endTurn("Draw one card and end your turn?")
+    DrawEndTurn("Draw one card and end your turn?")
     
 })
