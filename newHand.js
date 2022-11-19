@@ -1,19 +1,21 @@
 //On window load ask for player name so that can be input into the table
 //Using the Prompt from W3Schools to help ask for the player's name
-function askName(){
-    let playerName;
-    let selection = prompt("Please enter your character name:")
-    //this is used if the player does not answer the question or cancels the prompt
-    if (selection== null || selection == "")
-    {
-        playerName="Player 1"
-    }
-    else{
-        playerName =selection
-    }
-    document.getElementById('PlayerName').innerHTML = playerName
-}
-window.addEventListener('load', askName())
+
+//Commenting this function out so I don't have to see it when I load the page everytime
+// function askName(){
+//     let playerName;
+//     let selection = prompt("Please enter your character name:")
+//     //this is used if the player does not answer the question or cancels the prompt
+//     if (selection== null || selection == "")
+//     {
+//         playerName="Player 1"
+//     }
+//     else{
+//         playerName =selection
+//     }
+//     document.getElementById('PlayerName').innerHTML = playerName
+// }
+// window.addEventListener('load', askName())
 
 
 //Need a const deck = []
@@ -23,9 +25,9 @@ const deck =[]
 //console.log(deck)
 
 //Need a const discardpile = [], that way I can pop cards out and have a length of the deck 
-
+//Another const hand =[] will be needed so I can keep track of how many cards are in the hand
 const discardpile=[]
-
+const hand=[]
 //A fucntion is needed to generate cards.
 //I'm thinking of using an array to keep track of what cards the player has.
 
