@@ -132,3 +132,6 @@ newCard(deck, hand)
 
 // document.getElementById('newgame').addEventListener('click', newCard(deck, "./SM35_EN_45.png"))
 
+//Shuffling the decks is important https://sebhastian.com/shuffle-array-javascript/
+//I found this link where the array was shuffled by giving it a different value that is randomed, then sorted using sort()
+//To implement it first howver I need to add more cards than 1.

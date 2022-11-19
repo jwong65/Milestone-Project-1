@@ -21,6 +21,7 @@ The player will achieve victory when they drop the opponent's life total to zero
 - The opponent must be able to have their own turn and play similar cards to the player
 - The player must be able to end their turn with a button or clause
 - The player will be prompted whether they want to end their turn when they press the end turn button.
+- The deck can be shuffled so that there are no set patterns in the array.
 
 ### Post-MVP Plans
 
