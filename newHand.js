@@ -2,20 +2,20 @@
 //Using the Prompt from W3Schools to help ask for the player's name
 
 //Commenting this function out so I don't have to see it when I load the page everytime
-// function askName(){
-//     let playerName;
-//     let selection = prompt("Please enter your character name:")
-//     //this is used if the player does not answer the question or cancels the prompt
-//     if (selection== null || selection == "")
-//     {
-//         playerName="Player 1"
-//     }
-//     else{
-//         playerName =selection
-//     }
-//     document.getElementById('PlayerName').innerHTML = playerName
-// }
-// window.addEventListener('load', askName())
+function askName(){
+    let playerName;
+    let selection = prompt("Please enter your character name:")
+    //this is used if the player does not answer the question or cancels the prompt
+    if (selection== null || selection == "")
+    {
+        playerName="Player 1"
+    }
+    else{
+        playerName =selection
+    }
+    document.getElementById('PlayerName').innerHTML = playerName
+}
+window.addEventListener('load', askName())
 
 
 
@@ -35,8 +35,10 @@ var deck =[]
 
 //Need a discardpile = [], that way I can pop cards out and have a length of the deck 
 //Another const hand =[] will be needed so I can keep track of how many cards are in the hand
-var discardpile=[]
-var playerHand=[]
+const discardpile = []
+
+const hand = []
+console.log(hand)
 //I'm thinking of using an array to keep track of what cards the player has.
 
 //This generation is to create the first deck.
@@ -81,7 +83,7 @@ const drawHand = newHand()
 //append only works if there's an Node object/String object being passed?
 
 //This is a placeholder to see if I can add a newCard from deck to hand.
-function newCard(deck, handarr){
+function newCard(deck, hand){
     //A case must be made if there aren't any cards left in the deck to draw from
     if (deck.length ==0){
         displayInformation("There are no more cards to draw or search in your deck.", "info")
@@ -106,15 +108,16 @@ function newCard(deck, handarr){
     })
     let drawnCard = deck.pop()
     //Testing for hand array having the card that is popped from the deck
-    // console.log("The deck is", deck)
-    // console.log("The card ripped from the deck is", drawnCard)
-    handarr.push(drawnCard)
+    console.log("The deck is", deck)
+    console.log("The card ripped from the deck is", drawnCard)
+    console.log(hand)
+
+
+    hand.push(drawnCard)
     // console.log("The hand is now ",handarr)
     
 }
 // For testing purpose adding additional cards to see where they will be appended
-newCard(deck, playerHand)
-newCard(deck, playerHand)
-newCard(deck, playerHand)
-console.log(playerHand)
-
+newCard(deck, hand)
+newCard(deck, hand)
+newCard(deck, hand)
