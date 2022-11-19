@@ -1,3 +1,19 @@
+//On window load ask for player name so that can be input into the table
+//Using the Prompt from W3Schools to help ask for the player's name
+function askName(){
+    let playerName;
+    let selection = prompt("Please enter your character name:")
+    //this is used if the player does not answer the question or cancels the prompt
+    if (selection== null || selection == "")
+    {
+        playerName="Player 1"
+    }
+    else{
+        playerName =selection
+    }
+}
+window.addEventListener('load', askName())
+
 //Need a const deck = []
 //The cards will need to be objects that way they have infomration in them
 const deck =[]

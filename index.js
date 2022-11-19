@@ -8,8 +8,7 @@ function displayHealth(healthnum, idname){
     document.getElementById(idname).innerHTML= innerHealth;
 }
 //A function is going to be needed to confirm whether the player wants to play a card. This may seem a bit bunch because I feel like it will interupt the flow of the game
-
-//Use confirm() from W3Schools you can put a variable to be output if you want the confirm box to show, but I have the displayInformation function so that is not neccesary
+//Using confirm() from W3Schools you can put a variable to be output if you want the confirm box to show, but I have the displayInformation function so that is not neccesary
 //I also considered prompt(), but I would rather the user not have to put yes or no
 //Consideration was also put for whether the user wanted to play a card or not but that stops the flow of the game and can become very irritating without the option to remove it
 //endTurn function should also signal the beginning for the opponent's turn
