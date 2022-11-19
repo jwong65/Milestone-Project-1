@@ -12,4 +12,4 @@ function card1Function(card1, directedHealth, target){
         //console.log(directedHealth)
     }
 }
-card1Function(card1, playerhealth, "HP")
+//An example of the card1 being use - card1Function(card1, playerhealth, "HP")

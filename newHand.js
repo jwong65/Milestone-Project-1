@@ -18,29 +18,7 @@
 // window.addEventListener('load', askName())
 
 
-//Need a const deck = []
-//The cards will need to be objects that way they have infomration in them
-const deck =[]
 
-//console.log(deck)
-
-//Need a const discardpile = [], that way I can pop cards out and have a length of the deck 
-//Another const hand =[] will be needed so I can keep track of how many cards are in the hand
-const discardpile=[]
-const hand=[]
-//I'm thinking of using an array to keep track of what cards the player has.
-
-//This generation is to create the first deck.
-deck.push(card1, card2, card3, card4, card5)
-
-//From W3Schools I used the formula to help get a random number. This function will get a random integer between the min and the max
-//Math.floor is used to get rid of the decimal points that Math.random() will provide.
-//https://www.w3schools.com/js/js_random.asp
-function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min) ) + min;
- }
- 
- getRndInteger(0, 10)
 //This will be the file that is being used to give information to the player from the beginning.
 //Need a function call for information everything something changes.
 
@@ -50,9 +28,32 @@ function displayInformation(input, location){
 }
 
 displayInformation("This is your opening hand.", "info")
- 
-//Using newInventory from the JS-Web-Gameimage.pngimage.png assignments as a basis.
 
+//The cards will need to be objects that way they have infomration in them
+// It can no longer be var because it will be shuffled.
+var deck =[]
+
+//Need a discardpile = [], that way I can pop cards out and have a length of the deck 
+//Another const hand =[] will be needed so I can keep track of how many cards are in the hand
+var discardpile=[]
+var hand=[]
+//I'm thinking of using an array to keep track of what cards the player has.
+
+//This generation is to create the first deck.
+deck.push(card1, card2, card3, card4, card5)
+
+// Shuffling the decks is important https://sebhastian.com/shuffle-array-javascript/ and https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+// I found this link where the array was shuffled by giving it a different value that is randomed, then sorted using sort()
+// Instead of using the random number generation I need to put the objects in the array of a random order. by using Math.random it gets a random value from 0-.999
+// By adding the -.5 it changes the range to -.5 to .499
+
+
+function shuffleDeck(deck){
+    return deck.sort(()=> Math.random()-.5)
+}
+deck = shuffleDeck(deck)
+console.log(deck)
+//Using newInventory from the JS-Web-Gameimage.pngimage.png assignments as a basis for newHand which is how drawing cards will be put in a function.
 function newHand(){
     let hand = document.createElement('div')
     hand.style.width = '50%'
@@ -113,7 +114,3 @@ newCard(deck, hand)
 newCard(deck, hand)
 newCard(deck, hand)
 
-
-// Shuffling the decks is important https://sebhastian.com/shuffle-array-javascript/
-// I found this link where the array was shuffled by giving it a different value that is randomed, then sorted using sort()
-// To implement it first howver I need to add more cards than 1.
