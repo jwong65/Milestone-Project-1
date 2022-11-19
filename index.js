@@ -13,8 +13,8 @@ function displayHealth(healthnum, idname){
 //I also considered prompt(), but I would rather the user not have to put yes or no
 //Consideration was also put for whether the user wanted to play a card or not but that stops the flow of the game and can become very irritating without the option to remove it
 //endTurn function should also signal the beginning for the opponent's turn
-function endTurn(){
-    if (confirm("Do you want to end your turn?")){
+function endTurn(text){
+    if (confirm(text)){
      displayInformation("Turn has ended.", "info")
         console.log("Turn "+ turnNumber+ " Ended")
         turnNumber++
@@ -46,5 +46,10 @@ document.getElementById('rules').addEventListener('click',()=>{
 })
 // This is currently the eventListener for the button for ending the turn
 document.getElementById('endturn').addEventListener('click', ()=>{
-    endTurn()
+    endTurn("Do you want to end your turn?")
+})
+//The eventListener for the draw cards button is similar to the endTurn button because drawing ends the turn
+//Event listener should draw a card, that will be done later.
+document.getElementById('draw').addEventListener('click', ()=>{
+    endTurn("Draw one card and end your turn?")
 })
