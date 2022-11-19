@@ -53,4 +53,6 @@ document.getElementById('endturn').addEventListener('click', ()=>{
 //Event listener should draw a card, that will be done later.
 document.getElementById('draw').addEventListener('click', ()=>{
     endTurn("Draw one card and end your turn?")
+    //Currently does not have the cancel button working right now
+    newCard(deck, hand)
 })

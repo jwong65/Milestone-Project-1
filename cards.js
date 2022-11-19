@@ -15,5 +15,5 @@ const card1 = new cardCreation('heal', 5, 'This card will heal you for 5 health'
 const card2 = new cardCreation('damage', 2, "This card does 2 damage to your opponent")
 const card3 = new cardCreation('block', 1, "The next attack you take will be reduced by 1.")
 const card4 = new cardCreation('recycle', null, "All cards in the discard pile are shuffled back into the deck. This card cannot be discarded.")
-const card6 = new cardCreation('draw', 1 , "You can draw one additional card this turn. You cannot attack if you play this card")
+const card5 = new cardCreation('draw', 1 , "You can draw one additional card this turn. You cannot attack if you play this card")
 //Instead of creating new cardCreation of the damage 2 card, I will push additional copies of the card to generate the deck.

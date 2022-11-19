@@ -30,8 +30,8 @@ const discardpile=[]
 const hand=[]
 //I'm thinking of using an array to keep track of what cards the player has.
 
-deck.push(card1)
-
+deck.push(card1, card2, card3, card4, card5)
+console.log(deck[4])
 //From W3Schools I used the formula to help get a random number. This function will get a random integer between the min and the max
 //Math.floor is used to get rid of the decimal points that Math.random() will provide.
 //https://www.w3schools.com/js/js_random.asp
@@ -78,13 +78,11 @@ const drawHand = newHand()
 //This is a placeholder to see if I can add a newCard from deck to hand.
 function newCard(deck, handarr){
     //A case must be made if there aren't any cards left in the deck to draw from
-    if (deck.length ===0){
+    if (deck.length ==0){
         displayInformation("There are no more cards to draw or search in your deck.", "info")
-        return
     }
-
-    //getRndInteger(0,0)
-    let draw = deck[0]
+    let top_of_deck = Number(deck.length-1)
+    let draw = deck[top_of_deck]
     let newImage = document.createElement('img')
     newImage.src ='assets/cardBorder.jpg'
     //newImage.src = URL, this will just be a placeholder for now until I can find an image for the cards so it won't be confusing
@@ -92,20 +90,19 @@ function newCard(deck, handarr){
     newImage.style.height ='100px'
     document.getElementById('hand').appendChild(newImage);
     //We do not want the information to be displayed just yet
-    //console.log(draw.text)
+    console.log(draw.text)//Draw is undefined, because top_of_deck needs to be deck.length-1.
     newImage.addEventListener('mouseover',()=>{
-        displayInformation( draw.text, "info")
+        displayInformation(draw.text, "info")
     })
     newImage.addEventListener('mouseout', ()=>{
         displayInformation("Your deck currently has " + deck.length + " card(s)." , "info")
     })
-    // newImage.addEventListener('click',{
     let drawnCard = deck.pop()
     //Testing for hand array having the card that is popped from the deck
-    console.log("The deck is", deck)
-    console.log("The card ripped from the deck is", drawnCard)
+    // console.log("The deck is", deck)
+    // console.log("The card ripped from the deck is", drawnCard)
     handarr.push(drawnCard)
-    console.log("The hand is now ",handarr)
+    // console.log("The hand is now ",handarr)
     
 }
 // For testing purpose adding additional cards to see where they will be appended
