@@ -1,11 +1,26 @@
 var playerhealth = 20
 var enemyhealth = 20
-
+var turnNumber = 1
 // console.log(playerhealth)
 
 function displayHealth(healthnum, idname){
     let innerHealth = healthnum
     document.getElementById(idname).innerHTML= innerHealth;
+}
+//A function is going to be needed to confirm whether the player wants to play a card. This may seem a bit bunch because I feel like it will interupt the flow of the game
+
+//Use confirm() from W3Schools you can put a variable to be output if you want the confirm box to show, but I have the displayInformation function so that is not neccesary
+//I also considered prompt(), but I would rather the user not have to put yes or no
+//Consideration was also put for whether the user wanted to play a card or not but that stops the flow of the game and can become very irritating without the option to remove it
+//endTurn function should also signal the beginning for the opponent's turn
+function endTurn(){
+    if (confirm("Do you want to end your turn?")){
+     displayInformation("Turn has ended.", "info")
+        console.log("Turn "+ turnNumber+ " Ended")
+        turnNumber++
+    } else{
+        return
+    }
 }
 
 displayHealth(playerhealth, "health")
@@ -29,4 +44,7 @@ document.getElementById('showdeck').addEventListener('click', ()=>{
 document.getElementById('rules').addEventListener('click',()=>{
     displayInformation("To begin you have 5 cards in your deck and are allowed to draw once per turn. If you draw for the turn your turn ends. You are allowed to play up to 3 cards per turn before it ends (unless extended by effects). If you want to end your turn prematurely, use the end turn button. If you do not have any cards in your deck you cannot draw a card.", "info")
 })
-//
+// This is currently the eventListener for the button for ending the turn
+document.getElementById('endturn').addEventListener('click', ()=>{
+    endTurn()
+})

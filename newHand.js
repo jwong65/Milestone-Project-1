@@ -97,5 +97,3 @@ newCard(deck)
 
 // document.getElementById('newgame').addEventListener('click', newCard(deck, "./SM35_EN_45.png"))
 
-
-//A function is going to be needed to confirm whether the player wants to play a card. This may seem a bit bunch because I feel like it will interupt the flow of the game
