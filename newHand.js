@@ -83,7 +83,7 @@ const drawHand = newHand()
 //append only works if there's an Node object/String object being passed?
 
 //This is a placeholder to see if I can add a newCard from deck to hand.
-function newCard(deck, hand){
+function newCard(deck, hand, discarded){
     //A case must be made if there aren't any cards left in the deck to draw from
     if (deck.length ==0){
         displayInformation("There are no more cards to draw or search in your deck.", "info")
@@ -97,27 +97,31 @@ function newCard(deck, hand){
 
     newImage.style.height ='100px'
     document.getElementById('hand').appendChild(newImage);
+    let drawnCard = deck.pop()
     //We do not want the information to be displayed just yet
     //Draw was undefined, because top_of_deck needs to be deck.length-1.
-    //console.log(draw.text
     newImage.addEventListener('mouseover',()=>{
         displayInformation(draw.text, "info")
     })
     newImage.addEventListener('mouseout', ()=>{
         displayInformation("Your deck currently has " + deck.length + " card(s)." , "info")
     })
-    let drawnCard = deck.pop()
+    newImage.addEventListener("click", ()=>{
+        newImage.remove()
+        
+        discarded.push(drawnCard)
+        console.log(discardpile)
+        //This removes the card from the hand when used.
+    })
     //Testing for hand array having the card that is popped from the deck
     // console.log("The deck is", deck)
     // console.log("The card ripped from the deck is", drawnCard)
     // console.log(hand)
-
-
     hand.push(drawnCard)
     // console.log("The hand is now ",handarr)
     
 }
 // For testing purpose adding additional cards to see where they will be appended
-newCard(deck, hand)
-newCard(deck, hand)
-newCard(deck, hand)
+newCard(deck, hand, discardpile)
+newCard(deck, hand, discardpile)
+newCard(deck, hand, discardpile)
