@@ -30,8 +30,9 @@ const discardpile=[]
 const hand=[]
 //I'm thinking of using an array to keep track of what cards the player has.
 
+//This generation is to create the first deck.
 deck.push(card1, card2, card3, card4, card5)
-console.log(deck[4])
+
 //From W3Schools I used the formula to help get a random number. This function will get a random integer between the min and the max
 //Math.floor is used to get rid of the decimal points that Math.random() will provide.
 //https://www.w3schools.com/js/js_random.asp
