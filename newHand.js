@@ -11,8 +11,10 @@ function askName(){
     else{
         playerName =selection
     }
+    document.getElementById('PlayerName').innerHTML = playerName
 }
 window.addEventListener('load', askName())
+
 
 //Need a const deck = []
 //The cards will need to be objects that way they have infomration in them
