@@ -25,3 +25,5 @@ while(turnEnd == true){
 document.getElementById('showoppturn').addEventListener('click',()=>{
     displayInformation("This a log of what your opponent has done on the previous turn" + turnNumber, "info")
 })
+
+//Player will win if health ever drops to zero.

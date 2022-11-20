@@ -60,6 +60,6 @@ function card5Function(){
 function card6Function(target){
     //For now target is only opponent
     enemyhealth = enemyhealth - (hand.length+1)
-    //Hand.length +1 
+    //Hand.length +1 because the pop happens before the card6function is called
     displayHealth(enemyhealth, target)
 }

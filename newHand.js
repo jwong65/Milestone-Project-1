@@ -101,7 +101,7 @@ function newCard(deck, hand, discarded){
         displayInformation(draw.text, "info")
     })
     newImage.addEventListener('mouseout', ()=>{
-        displayInformation("Your deck currently has " + deck.length + " card(s)." , "info")
+        displayInformation("Hover your mouse over each card to " , "info")
     })
     newImage.addEventListener("click", ()=>{
         //We need this to keep the player from playing only 3 cards a turn.
@@ -125,15 +125,19 @@ function newCard(deck, hand, discarded){
         }
         else if (draw.cardID == '3'){
             card3Function(card3, 'player')
+            console.log("Card 3 was used")
         }
         else if (draw.cardID =='4'){
             card4Function()
+            console.log("Card 4 was used")
         }
         else if (draw.cardID =='5'){
             card5Function()
+            console.log("Card 5 was used")
         }
         else if (draw.cardID =='6'){
-            card6Function()
+            card6Function('opphealth')
+            console.log("Card 6 was used")
         }
         //If template literals are not possible, I might just have to use if else statments to get the right effect with the right card.
         displayCardsinHand()
