@@ -133,8 +133,15 @@ function newCard(deck, hand, discarded){
         //This removes the card from the hand when used.
         //To activate effect this needs to be called elsewhere.
         console.log(draw.cardID)
-        card1Function(card1, playerhealth, "HP")
-        console.log("CARD 1")
+        if (draw.cardID =='1'){
+            card1Function(card1, playerhealth, "HP")
+            console.log("Card 1 was used")
+        }
+        if (draw.cardID =='2'){
+            card2Function(card2, enemyhealth, 'opphealth')
+            console.log("Card 2 was used")
+        }
+        //If template literals are not possible, I might just have to use if else statments to get the right effect with the right card.
     
     })
     //Testing for hand array having the card that is popped from the deck

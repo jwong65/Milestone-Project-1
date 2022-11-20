@@ -2,7 +2,7 @@
 //Card 1 function to heal by value
 function card1Function(card1, directedHealth, target){
     if (Number(card1.value)+directedHealth > 20){
-        //Error found, when you write directedHealth it does not change the global variable.
+        //Error found, when you write directedHealth it does not change the global variable. Template literals are used to change the global variable
         `${directedHealth}`=20;
         //console.log(directedHealth)
         displayHealth(`${directedHealth}`, target)
@@ -20,8 +20,8 @@ function card1Function(card1, directedHealth, target){
 
 //Card 2 function to do damage.
 function card2Function(card2, directedHealth, target){
-    directedHealth = directedHealth - card2.value
-    displayHealth(directedHealth, target)
+    `${directedHealth}` = directedHealth - card2.value
+    displayHealth(playerhealth, target)
 }
 // card2Function(card2, enemyhealth, "opphealth")
 // console.log(enemyhealth)
