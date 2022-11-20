@@ -132,6 +132,9 @@ function newCard(deck, hand, discarded){
         else if (draw.cardID =='5'){
             card5Function()
         }
+        else if (draw.cardID =='6'){
+            card6Function()
+        }
         //If template literals are not possible, I might just have to use if else statments to get the right effect with the right card.
         displayCardsinHand()
     

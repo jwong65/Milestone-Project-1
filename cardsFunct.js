@@ -55,3 +55,11 @@ function card5Function(){
     newCard(deck, hand, discardpile)
     newCard(deck, hand, discardpile)
 }
+
+//Card 6 function to do damage equalivent to the number of cards in your hand, including itself.
+function card6Function(target){
+    //For now target is only opponent
+    enemyhealth = enemyhealth - (hand.length+1)
+    //Hand.length +1 
+    displayHealth(enemyhealth, target)
+}
