@@ -35,7 +35,7 @@ function displayHealth(healthnum, idname){
 function DrawEndTurn(text){
     if (confirm(text)){
      displayInformation("Turn has ended.", "info")
-        console.log("Turn "+ turnNumber+ " Ended")
+        //console.log("Turn "+ turnNumber+ " Ended")
         newCard(deck, hand, discardpile)
         displayCardsinHand()
         //turnNumber++ Turn number became unneccesary but was important for helping find out errors.

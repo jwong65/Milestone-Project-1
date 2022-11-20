@@ -15,6 +15,7 @@ function checkManyPlayed(){
         alert("Opponent turn begins.");{
         setTimeout(()=>{
                 //Opponent will do 5 damage with 1 card if they hold less than 6 cards and more than 2.
+                turnNumber = turnNumber +1
                 playerhealth = playerhealth -(numofOpponentCards)
                 displayInformation("Opponent strikes for "+ numofOpponentCards + " damage (how many cards they held) and draws 2", 'info')
                 displayHealth(playerhealth, 'HP')   
@@ -45,6 +46,6 @@ document.getElementById('showoppturn').addEventListener('click',()=>{
         displayInformation("This is the first turn, the opponent has not made a turn", 'info')
     }
     else{
-        displayInformation("This a log of what your opponent has done on the previous turn" + turnNumber -1 +"\n The opponent struck for "+ numofOpponentCards+" damage. They then drew 2 card", "info")
+        displayInformation("This a log of what your opponent has done on the previous turn. The opponent struck for "+ numofOpponentCards-1 +" damage. They then drew 2 card", "info")
     }
 })
