@@ -71,6 +71,10 @@ function newHand(){
     //justifyContent placed all the cards in the center but I think space-evenly or space-betwen can be used
     hand.style.justifyContent = 'space-evenly'
     //hand.style.justifyContent ='center'
+    hand.style.zIndex= 0
+
+    hand.style.position ='relative'
+    hand.style.bottom = "250px"
     
     hand.setAttribute('id', 'hand')
     //This border will be for testing

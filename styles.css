@@ -63,6 +63,7 @@ div{
 #showdeck, #draw, #rules, #endturn, #showoppturn{
     position: absolute;
     bottom: 100px;
+    z-index: 1;
 }
 #draw{
     left: 100px;
