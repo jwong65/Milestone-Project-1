@@ -42,7 +42,7 @@ function checkManyPlayed(){
 
 document.getElementById('showoppturn').addEventListener('click',()=>{
     if (turnNumber==1){
-        displayInformation("This is the first turn, the opponent has not made a turn")
+        displayInformation("This is the first turn, the opponent has not made a turn", 'info')
     }
     else{
         displayInformation("This a log of what your opponent has done on the previous turn" + turnNumber -1 +"\n The opponent struck for "+ numofOpponentCards+" damage. They then drew 2 card", "info")
