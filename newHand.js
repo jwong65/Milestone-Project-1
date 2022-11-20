@@ -31,13 +31,6 @@ function displayInformation(input, location){
 
 displayInformation("This is your opening hand.", "info")
 
-//This is a function that will always be called to keep track of how many cards are in your hand. In case you do not want to count yourself. It will also come in handy for cards that rely on the hand count
-//This function has to be copied because I cannot move displayCardsinHand from index.js
-function displayCardsinHand(){
-    document.getElementById('NumCardsHand').textContent = "Cards currently in hand: " + hand.length
-}
-
-
 //This generation is to create the first deck.
 deck.push(card1, card2, card3, card4, card5)
 //This should be a for loop or something to that effect.
@@ -82,23 +75,6 @@ function newHand(){
     return hand
 }
 
-function oppHand(){
-    let oppHand = document.createElement('div')
-    oppHand.style.width ='50%'
-    oppHand.style.height ='100px'
-    oppHand.style.display='flex'
-    oppHand.style.flexDirection='row'
-    oppHand.style.justifyContent = 'space-evenly'
-    oppHand.setAttribute = ('id', 'opphand')
-    oppHand.style.border='1px solid black'
-    oppHand.style.backgroundColor ='orange'
-    document.body.append(oppHand)
-    oppHand.style.position='relative'
-    oppHand.style.left ="550px"
-    oppHand.style.bottom = "500px"
-}
-
-const drawOpp = oppHand()
 const drawHand = newHand()
 //append only works if there's an Node object/String object being passed?
 
