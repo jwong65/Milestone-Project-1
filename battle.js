@@ -46,6 +46,6 @@ document.getElementById('showoppturn').addEventListener('click',()=>{
         displayInformation("This is the first turn, the opponent has not made a turn", 'info')
     }
     else{
-        displayInformation("This a log of what your opponent has done on the previous turn. The opponent struck for "+ numofOpponentCards-1 +" damage. They then drew 2 card", "info")
+        displayInformation("This a log of what your opponent has done on the previous turn. The opponent struck for "+ (numofOpponentCards-1) +" damage. They then drew 2 card", "info")
     }
 })
