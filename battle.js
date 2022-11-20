@@ -20,14 +20,11 @@ function checkManyPlayed(){
                 displayHealth(playerhealth, 'HP')   
                 opponentDraws()
                 numofOpponentCards+=1
-                checkVictory
-            
-
+                checkVictory()
+                numberofCardplayed=0
         },1000)
     }
     }
-
-    resetTurn(numberofCardplayed)
 }
 
 
