@@ -5,6 +5,9 @@ function checkVictory(){
     if (enemyhealth<=0){
         window.alert("Congratulations enemy health has dropped to zero.")
     }
+    if (playerhealth<=0){
+        window.alert("Unfortunate. Your health has droped to zero.")
+    }
 }
 function checkManyPlayed(){
     if (numberofCardplayed=3){

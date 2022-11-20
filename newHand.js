@@ -29,7 +29,7 @@ function displayInformation(input, location){
     document.getElementById(location).innerHTML = textbox;
 }
 
-displayInformation("This is your opening hand.", "info")
+displayInformation("Hover your mouse over each card to see what each card will do. Select the Rules button to read the rules", "info")
 
 //This generation is to create the first deck.
 deck.push(card1, card2, card3, card4, card5)
@@ -73,6 +73,7 @@ function newHand(){
     
     document.body.append(hand)
     return hand
+    
 }
 const drawHand = newHand()
 //append only works if there's an Node object/String object being passed?
@@ -101,10 +102,11 @@ function newCard(deck, hand, discarded){
         displayInformation(draw.text, "info")
     })
     newImage.addEventListener('mouseout', ()=>{
-        displayInformation("Hover your mouse over each card to see what each card will do." , "info")
+        displayInformation("Hover your mouse over each card to see what each card will do. Select the Rules button to read the rules" , "info")
     })
     newImage.addEventListener("click", ()=>{
         //We need this to keep the player from playing only 3 cards a turn.
+        
         numberofCardplayed++
         //This removes the card from the hand when used.
         newImage.remove()
@@ -155,7 +157,7 @@ function newCard(deck, hand, discarded){
     // console.log(hand)
     displayCardsinHand()
     // console.log("The hand is now ",handarr)
-    
+    checkManyPlayed()
 }
 // For testing purpose adding additional cards to see where they will be appended
 newCard(deck, hand, discardpile)
