@@ -28,3 +28,9 @@ while(turnEnd == true){
     turnEnd =false;
 
 }
+//Opponent turn will have to be put on a setTimeout() that will be okay enough that it doesn't seem jarring.
+//A button will be needed to show the log of what the opponent has done.
+
+document.getElementById('showoppturn').addEventListener('click',()=>{
+    displayInformation("text of opponent's turn placeholder", "info")
+})

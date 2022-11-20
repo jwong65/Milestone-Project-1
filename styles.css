@@ -60,7 +60,7 @@ div{
     position: absolute;
     bottom: 50px;
 }
-#showdeck, #draw, #rules, #endturn{
+#showdeck, #draw, #rules, #endturn, #showoppturn{
     position: absolute;
     bottom: 100px;
 }
@@ -72,6 +72,9 @@ div{
 }
 #endturn{
     left: 200px;
+}
+#showoppturn{
+    left:275px;
 }
 /* 
 #next{
