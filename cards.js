@@ -1,7 +1,3 @@
-var playerhealth = 14
-var enemyhealth = 20
-var turnNumber = 1
-var turnEnd = false;
 
 // const card1 ={
 //     type: "Heal",
