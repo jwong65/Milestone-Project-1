@@ -12,7 +12,18 @@ function checkVictory(){
 function checkManyPlayed(){
     if (numberofCardplayed=3){
         //Opponent turn will start.
+        if (confirm("Opponent turn begins.")){
+        setTimeout(()=>{
+            if ((numofOpponentCards<6)&&(numofOpponentCards>2)){
+                //Opponent will do 5 damage with 1 card if they hold less than 6 cards and more than 2.
+                playerhealth = playerhealth -5
+                
+            }
+
+        },5000)
     }
+    }
+
     resetTurn(numberofCardplayed)
 }
 

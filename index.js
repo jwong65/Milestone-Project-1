@@ -78,6 +78,8 @@ document.getElementById('rules').addEventListener('click',()=>{
 // This is currently the eventListener for the button for ending the turn
 document.getElementById('endturn').addEventListener('click', ()=>{
     endTurn("Do you want to end your turn?")
+    numberofCardplayed = 3
+    checkManyPlayed()
 })
 //The eventListener for the draw cards button is similar to the endTurn button because drawing ends the turn
 //Event listener should draw a card, that will be done later.
@@ -87,5 +89,5 @@ document.getElementById('draw').addEventListener('click', ()=>{
 })
 
 document.getElementById('showoppturn').addEventListener('click',()=>{
-    
+
 })

@@ -31,8 +31,10 @@ function opponentDraws(){
     newImage.style.height ='100px'
     document.getElementById('opphand').appendChild(newImage);
 
-
-
 }
-
+//This is to have 3 cards for the opponent but can be put into a loop
 opponentDraws()
+opponentDraws()
+opponentDraws()
+
+var numofOpponentCards = 3;
