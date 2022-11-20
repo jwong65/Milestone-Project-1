@@ -10,9 +10,9 @@ function checkVictory(){
     }
 }
 function checkManyPlayed(){
-    if (numberofCardplayed=3){
+    if (numberofCardplayed==3){
         //Opponent turn will start.
-        if (confirm("Opponent turn begins.")){
+        //if (confirm("Opponent turn begins.")){
         setTimeout(()=>{
             if ((numofOpponentCards<6)&&(numofOpponentCards>2)){
                 //Opponent will do 5 damage with 1 card if they hold less than 6 cards and more than 2.
@@ -20,9 +20,9 @@ function checkManyPlayed(){
                 
             }
 
-        },5000)
+        },1000)
     }
-    }
+    // }
 
     resetTurn(numberofCardplayed)
 }
