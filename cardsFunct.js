@@ -6,11 +6,13 @@ function card1Function(card1, directedHealth, target){
         directedHealth=20;
         //console.log(directedHealth)
         displayHealth(directedHealth, target)
+        console.log("Card 1 activated")
     }
     else{
         directedHealth=directedHealth+card1.value
         displayHealth(directedHealth, target)
         //console.log(directedHealth)
+        console.log("Card1 activated")
     }
 }
 // card1Function(card1, playerhealth, "HP")

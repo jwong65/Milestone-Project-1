@@ -4,6 +4,19 @@ var turnNumber = 1
 var turnEnd = false;
 // console.log(playerhealth)
 
+//The cards will need to be objects that way they have infomration in them
+// It can no longer be var because it will be shuffled.
+var deck =[]
+
+//Need a discardpile = [], that way I can pop cards out and have a length of the deck 
+//Another const hand =[] will be needed so I can keep track of how many cards are in the hand
+const discardpile = []
+
+const hand = []
+//console.log(hand)
+//I'm thinking of using an array to keep track of what cards the player has.
+
+
 function displayHealth(healthnum, idname){
     let innerHealth = healthnum
     document.getElementById(idname).textContent=innerHealth

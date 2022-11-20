@@ -1,3 +1,5 @@
+
+
 //On window load ask for player name so that can be input into the table
 //Using the Prompt from W3Schools to help ask for the player's name
 
@@ -35,18 +37,6 @@ function displayCardsinHand(){
     document.getElementById('NumCardsHand').textContent = "Cards currently in hand: " + hand.length
 }
 
-
-//The cards will need to be objects that way they have infomration in them
-// It can no longer be var because it will be shuffled.
-var deck =[]
-
-//Need a discardpile = [], that way I can pop cards out and have a length of the deck 
-//Another const hand =[] will be needed so I can keep track of how many cards are in the hand
-const discardpile = []
-
-const hand = []
-//console.log(hand)
-//I'm thinking of using an array to keep track of what cards the player has.
 
 //This generation is to create the first deck.
 deck.push(card1, card2, card3, card4, card5)
@@ -138,10 +128,14 @@ function newCard(deck, hand, discarded){
     })
     newImage.addEventListener("click", ()=>{
         newImage.remove()
-        //There is an error here. After 4 pushes the array breaks. The error is Paused on exception TypeError: discarded is undefined
         console.log(discardpile)
         discarded.push(drawnCard)
         //This removes the card from the hand when used.
+        //To activate effect this needs to be called elsewhere.
+        console.log(draw.cardID)
+        card1Function(card1, playerhealth, "HP")
+        console.log("CARD1 WORK?")
+    
     })
     //Testing for hand array having the card that is popped from the deck
     // console.log("The deck is", deck)
