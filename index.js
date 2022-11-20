@@ -1,6 +1,7 @@
 var playerhealth = 14
 var enemyhealth = 20
 var turnNumber = 1
+var turnEnd = false;
 // console.log(playerhealth)
 
 function displayHealth(healthnum, idname){
@@ -21,6 +22,7 @@ function DrawEndTurn(text){
         newCard(deck, hand)
         displayCardsinHand()
         turnNumber++
+        turnEnd = true;
     } else{
         return
     }
