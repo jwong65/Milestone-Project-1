@@ -39,7 +39,7 @@ function DrawEndTurn(text){
         newCard(deck, hand, discardpile)
         displayCardsinHand()
         turnNumber++
-        turnEnd = true;
+        numberofCardplayed=0
     } else{
         return
     }
@@ -47,7 +47,7 @@ function DrawEndTurn(text){
 //Currently this has no use case, but there should be a scenario where the turn will end because of a condition.
 function endTurn(){
     displayInformation('The turn has ended.', 'info')
-    turnEnd =true;
+    numberofCardplayed=0
 }
 //This is a function that will always be called to keep track of how many cards are in your hand. In case you do not want to count yourself. It will also come in handy for cards that rely on the hand count
 function displayCardsinHand(){
@@ -78,7 +78,6 @@ document.getElementById('rules').addEventListener('click',()=>{
 // This is currently the eventListener for the button for ending the turn
 document.getElementById('endturn').addEventListener('click', ()=>{
     endTurn("Do you want to end your turn?")
-    numberofCardplayed = 3
     checkManyPlayed()
 })
 //The eventListener for the draw cards button is similar to the endTurn button because drawing ends the turn
