@@ -53,7 +53,7 @@ document.getElementById('showdeck').addEventListener('click', ()=>{
 })
 //This is the rules eventListener for the button, it will show you the rules in the information box once you click on this button
 document.getElementById('rules').addEventListener('click',()=>{
-    displayInformation("To begin you have 15 cards in your deck and are allowed to draw once per turn. You are automatically given 3 cards to begin the match. If you draw for the turn your turn ends. You are allowed to play up to 3 cards per turn before it ends (unless extended by effects). If you want to end your turn prematurely, use the end turn button. If you do not have any cards in your deck you cannot draw a card.", "info")
+    displayInformation("To begin you have 10 cards in your deck and are allowed to draw once per turn. You are automatically given 3 cards to begin the match. If you draw for the turn your turn ends. You are allowed to play up to 3 cards per turn before it ends (unless extended by effects). If you want to end your turn prematurely, use the end turn button. If you do not have any cards in your deck you cannot draw a card.", "info")
 })
 // This is currently the eventListener for the button for ending the turn
 document.getElementById('endturn').addEventListener('click', ()=>{
