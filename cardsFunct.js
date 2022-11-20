@@ -24,3 +24,8 @@ function card2Function(card2, directedHealth, target){
 }
 // card2Function(card2, enemyhealth, "opphealth")
 // console.log(enemyhealth)
+
+//Card 3 function to do damage
+function card3Function(card3, target){
+    
+}
