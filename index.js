@@ -32,11 +32,7 @@ function endTurn(){
     displayInformation('The turn has ended.', 'info')
     turnEnd =true;
 }
-//This is a function that will always be called to keep track of how many cards are in your hand. In case you do not want to count yourself. It will also come in handy for cards that rely on the hand count
-function displayCardsinHand(){
-    document.getElementById('NumCardsHand').textContent = "Cards currently in hand: " + hand.length
-}
-displayCardsinHand()
+
 displayHealth(playerhealth, "HP")
 displayHealth(enemyhealth, "opphealth")
 // Display Health should be invoked everytime there's a change in the system.

@@ -29,6 +29,12 @@ function displayInformation(input, location){
 
 displayInformation("This is your opening hand.", "info")
 
+//This is a function that will always be called to keep track of how many cards are in your hand. In case you do not want to count yourself. It will also come in handy for cards that rely on the hand count
+function displayCardsinHand(){
+    document.getElementById('NumCardsHand').textContent = "Cards currently in hand: " + hand.length
+}
+displayCardsinHand()
+
 //The cards will need to be objects that way they have infomration in them
 // It can no longer be var because it will be shuffled.
 var deck =[]
@@ -131,9 +137,8 @@ function newCard(deck, hand, discarded){
     })
     newImage.addEventListener("click", ()=>{
         newImage.remove()
-        
-        discarded.push(drawnCard)
         console.log(discardpile)
+        discarded.push(drawnCard)
         //This removes the card from the hand when used.
     })
     //Testing for hand array having the card that is popped from the deck
