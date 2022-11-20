@@ -1,17 +1,18 @@
 //I want to use another file to store the cards.
 //Card 1 function to heal by value
-function card1Function(card1, directedHealth, target){
-    if (Number(card1.value)+directedHealth > 20){
-        //Error found, when you write directedHealth it does not change the global variable. Template literals are used to change the global variable
-        `${directedHealth}`=20;
+function card1Function(card1, target){
+    if (Number(card1.value)+playerhealth > 20){
+        //Error found, when you write directedHealth it does not change the global variable. 
+        //Template literals are used to change the global variable, they are broken once again will ask in class about them ${}
+        playerhealth=20;
         //console.log(directedHealth)
-        displayHealth(`${directedHealth}`, target)
-        //console.log("Card 1 activated")
+        displayHealth(playerhealth, target)
+        console.log("Card 1 activated")
     }
     else{
-        `${directedHealth}`=`${directedHealth}`+card1.value
-        displayHealth(`${directedHealth}`, target)
-        //console.log("Card1 activated")
+        playerhealth=playerhealth+card1.value
+        displayHealth(playerhealth, target)
+        console.log("Card1 activated")
     }
 }
 // card1Function(card1, playerhealth, "HP")
@@ -20,7 +21,7 @@ function card1Function(card1, directedHealth, target){
 
 //Card 2 function to do damage.
 function card2Function(card2, directedHealth, target){
-    `${directedHealth}` = directedHealth - card2.value
+    directedHealth = directedHealth - card2.value
     displayHealth(playerhealth, target)
 }
 // card2Function(card2, enemyhealth, "opphealth")
