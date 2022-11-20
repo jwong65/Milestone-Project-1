@@ -1,7 +1,6 @@
 var playerhealth = 14;
 var enemyhealth = 20;
 var turnNumber = 1;
-var turnEnd = false;
 // console.log(playerhealth)
 
 //The cards will need to be objects that way they have infomration in them
