@@ -84,5 +84,8 @@ document.getElementById('endturn').addEventListener('click', ()=>{
 document.getElementById('draw').addEventListener('click', ()=>{
     //Currently commenting out endTurn so I can test quicker.
     DrawEndTurn("Draw one card and end your turn?")
+})
+
+document.getElementById('showoppturn').addEventListener('click',()=>{
     
 })
