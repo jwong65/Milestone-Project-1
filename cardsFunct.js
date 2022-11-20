@@ -1,20 +1,17 @@
 //I want to use another file to store the cards.
 //Card 1 function to heal by value
-function card1Function(card1, directedHealth, target){
-    console.log(Number(card1.value)+" " +String(directedHealth))
-    if (Number(card1.value)+directedHealth > 20){
-        directedHealth=20;
+function card1Function(card1, target){
+    if (Number(card1.value)+playerhealth > 20){
+        //Error found, when you write directedHealth it does not change the global variable.
+        playerhealth=20;
         //console.log(directedHealth)
-        displayHealth(directedHealth, target)
-        console.log("Card 1 activated")
-        return directedHealth
+        displayHealth(playerhealth, target)
+        //console.log("Card 1 activated")
     }
     else{
-        directedHealth=directedHealth+card1.value
-        displayHealth(directedHealth, target)
-        //console.log(directedHealth)
-        console.log("Card1 activated")
-        return directedHealth
+        playerhealth=playerhealth+card1.value
+        displayHealth(playerhealth, target)
+        //console.log("Card1 activated")
     }
 }
 // card1Function(card1, playerhealth, "HP")
