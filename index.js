@@ -38,8 +38,8 @@ function DrawEndTurn(text){
         console.log("Turn "+ turnNumber+ " Ended")
         newCard(deck, hand, discardpile)
         displayCardsinHand()
-        turnNumber++
-        numberofCardplayed=0
+        //turnNumber++ Turn number became unneccesary but was important for helping find out errors.
+
     } else{
         return
     }
@@ -86,6 +86,8 @@ document.getElementById('endturn').addEventListener('click', ()=>{
 document.getElementById('draw').addEventListener('click', ()=>{
     //Currently commenting out endTurn so I can test quicker.
     DrawEndTurn("Draw one card and end your turn?")
+    numberofCardplayed = 3
+    checkManyPlayed()
 })
 
 document.getElementById('showoppturn').addEventListener('click',()=>{

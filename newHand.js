@@ -53,7 +53,7 @@ deck = shuffleDeck(deck)
 //Using newInventory from the JS-Web-Gameimage.pngimage.png assignments as a basis for newHand which is how drawing cards will be put in a function.
 function newHand(){
     let hand = document.createElement('div')
-    hand.style.width = '50%'
+    hand.style.width = '45vw'
     hand.style.height = '100px';
     hand.style.display ='flex'
     hand.style.flexDirection = 'row'
