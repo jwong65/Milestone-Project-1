@@ -11,10 +11,7 @@ var deck =[]
 //Need a discardpile = [], that way I can pop cards out and have a length of the deck 
 //Another const hand =[] will be needed so I can keep track of how many cards are in the hand
 const discardpile = []
-
-const hand = []
-//I'm thinking of using an array to keep track of what cards the player has.
-
+const hand=[]
 //This variable will keep track of how many number of cards were played this turn. This is because I put an arbitrary limit of 3 cards played per turn
 var numberofCardplayed =0;
 
