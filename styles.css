@@ -2,9 +2,8 @@ body{
     background-color: #435c8a;
 }
 div{
-    background-color: chartreuse;
-    border: 2px solid black;
-    
+    /*border: 2px solid black;
+    */
     text-align: center;
     padding: 25px 25px 25px 50px;
     margin: 15px;
@@ -26,6 +25,7 @@ div{
     
 }
 #player{
+    color:aliceblue;
     position: relative;
     left: 1150px;
     top: 75px;
@@ -48,6 +48,7 @@ div{
     top: 355px;
     width: 850px;
     text-align: center;
+    background-color: bisque;
 }
 /* 
 #hand{

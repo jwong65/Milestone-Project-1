@@ -17,7 +17,7 @@ function checkManyPlayed(){
                 //Opponent will do 5 damage with 1 card if they hold less than 6 cards and more than 2.
                 turnNumber = turnNumber +1
                 playerhealth = playerhealth -(numofOpponentCards)
-                displayInformation("Opponent strikes for "+ numofOpponentCards + " damage (how many cards they held) and draws 2", 'info')
+                displayInformation("Opponent plays one card and strikes for "+ numofOpponentCards + " damage (how many cards they held) and draws 2", 'info')
                 displayHealth(playerhealth, 'HP')   
                 opponentDraws()
                 numofOpponentCards+=1
