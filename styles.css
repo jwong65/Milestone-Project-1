@@ -1,3 +1,6 @@
+body{
+    background-color: #435c8a;
+}
 div{
     background-color: chartreuse;
     border: 2px solid black;
@@ -10,15 +13,15 @@ div{
     padding-right: 25px;
     padding-bottom: 50px;
     */
-
 }
+
 #opponent{
     color: antiquewhite;
     position: relative;
     left: 20px;
     z-index: 0;
     height:200px;
-    width: 25vw;
+    width: 200px;
     text-align: center;
     
 }
