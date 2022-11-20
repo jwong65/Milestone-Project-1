@@ -1,5 +1,13 @@
 //Using another file to help generate the combat that will be taking place.
 
+//Player will win if health ever drops to zero.
+function checkVictory(){
+    if (enemyhealth<=0){
+        window.alert("Congratulations enemy health has dropped to zero.")
+    }
+}
+
+
 //A function will be needed to reset these after every turn.
 function resetTurn(numberofCardplayed, turnDefense, damageAllowed){
     numberofCardplayed = 0;
@@ -25,5 +33,3 @@ while(turnEnd == true){
 document.getElementById('showoppturn').addEventListener('click',()=>{
     displayInformation("This a log of what your opponent has done on the previous turn" + turnNumber, "info")
 })
-
-//Player will win if health ever drops to zero.
