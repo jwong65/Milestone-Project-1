@@ -20,9 +20,9 @@ function card1Function(card1, target){
 //An example of the card1 being use - card1Function(card1, playerhealth, "HP")
 
 //Card 2 function to do damage.
-function card2Function(card2, directedHealth, target){
-    directedHealth = directedHealth - card2.value
-    displayHealth(playerhealth, target)
+function card2Function(card2, target){
+    enemyhealth = enemyhealth - card2.value
+    displayHealth(enemyhealth, target)
 }
 // card2Function(card2, enemyhealth, "opphealth")
 // console.log(enemyhealth)

@@ -130,18 +130,18 @@ function newCard(deck, hand, discarded){
         newImage.remove()
         console.log(discardpile)
         discarded.push(drawnCard)
-        card1Function(card1, 'HP')
+        
         //This removes the card from the hand when used.
-        // //To activate effect this needs to be called elsewhere.
+
         // console.log(draw.cardID)
-        // if (draw.cardID =='1'){
-        //     card1Function(card1, playerhealth, "HP")
-        //     console.log("Card 1 was used")
-        // }
-        // el if (draw.cardID =='2'){
-        //     card2Function(card2, enemyhealth, 'opphealth')
-        //     console.log("Card 2 was used")
-        // }
+        if (draw.cardID =='1'){
+            card1Function(card1, "HP")
+            console.log("Card 1 was used")
+        }
+        else if (draw.cardID =='2'){
+            card2Function(card2, 'opphealth')
+            console.log("Card 2 was used")
+        }
         //If template literals are not possible, I might just have to use if else statments to get the right effect with the right card.
     
     })
