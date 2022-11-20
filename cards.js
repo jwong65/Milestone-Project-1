@@ -19,3 +19,4 @@ const card3 = new cardCreation('block', 1, "The next attack you take will be red
 const card4 = new cardCreation('recycle', null, "All cards in the discard pile are shuffled back into the deck. This card cannot be discarded.")
 const card5 = new cardCreation('draw', 1 , "You can draw one additional card this turn. You cannot use damage cards if you play this card")
 //Instead of creating new cardCreation of the damage 2 card, I will push additional copies of the card to generate the deck.
+const card6 = new cardCreation('damage', null, "This card does damage equal to the number of cards you're holding.")
