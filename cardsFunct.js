@@ -39,7 +39,7 @@ function card3Function(card3, target){
     }
 }
 
-//Card 4 function to add cards back to the deck.
+//Card 4 function to add cards back to the deck. 
 function card4Function(){
     discardpile.forEach(()=>{
         returnCard= discardpile.pop()
@@ -47,4 +47,11 @@ function card4Function(){
         deck.push(returnCard)
         shuffleDeck(deck)
     })
+}
+
+
+//Card 5 function allows for a second draw
+function card5Function(){
+    newCard(deck, hand, discardpile)
+    newCard(deck, hand, discardpile)
 }

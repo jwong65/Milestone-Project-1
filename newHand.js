@@ -104,9 +104,11 @@ function newCard(deck, hand, discarded){
         displayInformation("Your deck currently has " + deck.length + " card(s)." , "info")
     })
     newImage.addEventListener("click", ()=>{
-         //This removes the card from the hand when used.
+        //We need this to keep the player from playing only 3 cards a turn.
+        numberofCardplayed++
+        //This removes the card from the hand when used.
         newImage.remove()
-        console.log(discardpile)
+        //console.log(discardpile)
         discarded.push(drawnCard)
         //To remove the card from the hand I cannot use .pop because that removes the last position of the array. 
         //As a quick fix, I can just pop because I'm only checking for hand.length at the moment
@@ -126,6 +128,9 @@ function newCard(deck, hand, discarded){
         }
         else if (draw.cardID =='4'){
             card4Function()
+        }
+        else if (draw.cardID =='5'){
+            card5Function()
         }
         //If template literals are not possible, I might just have to use if else statments to get the right effect with the right card.
         displayCardsinHand()
