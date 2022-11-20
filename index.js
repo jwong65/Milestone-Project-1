@@ -19,7 +19,7 @@ function DrawEndTurn(text){
     if (confirm(text)){
      displayInformation("Turn has ended.", "info")
         console.log("Turn "+ turnNumber+ " Ended")
-        newCard(deck, hand)
+        newCard(deck, hand, discardpile)
         displayCardsinHand()
         turnNumber++
         turnEnd = true;
