@@ -107,7 +107,6 @@ function newCard(deck, hand, discarded){
     newImage.addEventListener("click", ()=>{
         //We need this to keep the player from playing only 3 cards a turn.
         
-        numberofCardplayed++
         //This removes the card from the hand when used.
         newImage.remove()
         //console.log(discardpile)
@@ -120,32 +119,47 @@ function newCard(deck, hand, discarded){
         if (draw.cardID =='1'){
             card1Function(card1, "HP")
             console.log("Card 1 was used")
+            numberofCardplayed+=1
             checkVictory()
+            checkManyPlayed()
         }
         else if (draw.cardID =='2'){
             card2Function(card2, 'opphealth')
             console.log("Card 2 was used")
+            
+            numberofCardplayed+=1
             checkVictory()
+            checkManyPlayed()
         }
         else if (draw.cardID == '3'){
             card3Function('opphealth')
             console.log("Card 3 was used")
+            
+            numberofCardplayed+=1
             checkVictory()
+            checkManyPlayed()
         }
         else if (draw.cardID =='4'){
             card4Function()
             console.log("Card 4 was used")
+            numberofCardplayed+=1
             checkVictory()
+            checkManyPlayed()
         }
         else if (draw.cardID =='5'){
             card5Function()
             console.log("Card 5 was used")
+            
+            numberofCardplayed+=1
             checkVictory()
+            checkManyPlayed()
         }
         else if (draw.cardID =='6'){
             card6Function('opphealth')
             console.log("Card 6 was used")
+            numberofCardplayed+=1
             checkVictory()
+            checkManyPlayed()
         }
         //If template literals are not possible, I might just have to use if else statments to get the right effect with the right card.
         displayCardsinHand()
@@ -157,7 +171,7 @@ function newCard(deck, hand, discarded){
     // console.log(hand)
     displayCardsinHand()
     // console.log("The hand is now ",handarr)
-    checkManyPlayed()
+    
 }
 // For testing purpose adding additional cards to see where they will be appended
 newCard(deck, hand, discardpile)

@@ -22,6 +22,6 @@ const card3 = new cardCreation('damage', 3, "This card will do damage equal to t
 //IT could be because I could not get a way to pop the correct card out of the hand, but it shouldn't matter because I push the drawnCard into the discardpile when used.
 const card4 = new cardCreation('recycle', null, "A random number of cards in the discard pile will be added back to the deck.", '4')
 
-const card5 = new cardCreation('draw', 1 , "You can draw two cards. This ends your turn.", '5')
+const card5 = new cardCreation('draw', 1 , "You can draw two cards.", '5')
 //Instead of creating new cardCreation of the damage 2 card, I will push additional copies of the card to generate the deck.
 const card6 = new cardCreation('damage', null, "This card does damage equal to the number of cards you're holding.", '6')
