@@ -138,6 +138,7 @@ function newCard(deck, hand, discarded){
     })
     newImage.addEventListener("click", ()=>{
         newImage.remove()
+        //There is an error here. After 4 pushes the array breaks. The error is Paused on exception TypeError: discarded is undefined
         console.log(discardpile)
         discarded.push(drawnCard)
         //This removes the card from the hand when used.
