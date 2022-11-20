@@ -133,7 +133,8 @@ function newCard(deck, hand, discarded){
         //This removes the card from the hand when used.
         //To activate effect this needs to be called elsewhere.
         console.log(draw.cardID)
-        card1Function(card1, "HP")
+        card1Function(card1, playerhealth, "HP")
+        console.log("CARD 1")
     
     })
     //Testing for hand array having the card that is popped from the deck
