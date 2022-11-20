@@ -15,8 +15,8 @@ function checkManyPlayed(){
         alert("Opponent turn begins.");{
         setTimeout(()=>{
                 //Opponent will do 5 damage with 1 card if they hold less than 6 cards and more than 2.
-                playerhealth = playerhealth -(numofOpponentCards*2)
-                displayInformation("Opponent strikes for "+ numofOpponentCards*2 + " damage (how many cards they held*2) and draws 2", 'info')
+                playerhealth = playerhealth -(numofOpponentCards)
+                displayInformation("Opponent strikes for "+ numofOpponentCards + " damage (how many cards they held) and draws 2", 'info')
                 displayHealth(playerhealth, 'HP')   
                 opponentDraws()
                 numofOpponentCards+=1

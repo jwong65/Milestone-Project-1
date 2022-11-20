@@ -1,4 +1,4 @@
-var playerhealth = 14;
+var playerhealth = 20;
 var enemyhealth = 20;
 var turnNumber = 1;
 // console.log(playerhealth)

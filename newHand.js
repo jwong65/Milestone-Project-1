@@ -34,7 +34,7 @@ displayInformation("Hover your mouse over each card to see what each card will d
 //This generation is to create the first deck.
 deck.push(card1, card2, card3, card4, card5)
 //This should be a for loop or something to that effect.
-deck.push(card1, card2, card3, card5, card6)
+deck.push(card2, card5, card5, card5, card6)
 
 // Shuffling the decks is important https://sebhastian.com/shuffle-array-javascript/ and https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 // I found this link where the array was shuffled by giving it a different value that is randomed, then sorted using sort()
