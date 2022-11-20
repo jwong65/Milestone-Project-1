@@ -28,12 +28,12 @@ function checkManyPlayed(){
 }
 
 
-//A function will be needed to reset these after every turn.
-function resetTurn(numberofCardplayed){
-    //turnDefense, damageAllowed
-    numberofCardplayed = 0;
-    // damageAllowed =true;
-}
+// //A function will be needed to reset these after every turn.
+// function resetTurn(numberofCardplayed){
+//     //turnDefense, damageAllowed
+//     numberofCardplayed = 0;
+//     // damageAllowed =true;
+// }
 //Example call would be resetTurn(numberofCardplayed, turnDefense, damageAllowed) This should be called when endTurn is called, but because endTurn is in index and it is above the declaration of battle.js it may need to be moved.
 
 
