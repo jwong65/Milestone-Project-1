@@ -30,6 +30,7 @@ function DrawEndTurn(text){
 //Currently this has no use case, but there should be a scenario where the turn will end because of a condition.
 function endTurn(){
     displayInformation('The turn has ended.', 'info')
+    turnEnd =true;
 }
 //This is a function that will always be called to keep track of how many cards are in your hand. In case you do not want to count yourself. It will also come in handy for cards that rely on the hand count
 function displayCardsinHand(){
