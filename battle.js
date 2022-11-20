@@ -32,5 +32,5 @@ while(turnEnd == true){
 //A button will be needed to show the log of what the opponent has done.
 
 document.getElementById('showoppturn').addEventListener('click',()=>{
-    displayInformation("text of opponent's turn placeholder", "info")
+    displayInformation("This a log of what your opponent has done on the previous turn" + turnNumber, "info")
 })
