@@ -23,7 +23,7 @@ var turnDefense =0;
 var opponentDefense =0;
 
 //Allowing damage cards to be played variable. This might be a bit much, possibly postMVP type of implemtation
-var damageAllowed = true;
+//var damageAllowed = true;
 
 function displayHealth(healthnum, idname){
     let innerHealth = healthnum
