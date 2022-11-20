@@ -126,7 +126,7 @@ function newCard(deck, hand, discarded){
             checkVictory()
         }
         else if (draw.cardID == '3'){
-            card3Function(card3, 'player')
+            card3Function('opphealth')
             console.log("Card 3 was used")
             checkVictory()
         }

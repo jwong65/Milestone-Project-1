@@ -29,14 +29,17 @@ function card2Function(card2, target){
 
 //Card 3 function to reduce damage
 //This function could be used against the player if I have time post-MVP
-function card3Function(card3, target){
+//I am changing this function because I feel the game could drag on if any type of defense was applied, this will be multiplicative to cardsPlayed
+function card3Function(target){
     //target can be turnDefense or oppDefense
-    if (target =="player"){
-        turnDefense+=card3.value
-    }
-    else{
-        opponentDefense+=card3.value
-    }
+    // if (target =="player"){
+    //     turnDefense+=card3.value
+    // }
+    // else{
+    //     opponentDefense+=card3.value
+    // }
+    enemyhealth = enemyhealth - (numberofCardplayed*3)
+    displayHealth(enemyhealth, target)
 }
 
 //Card 4 function to add cards back to the deck. 

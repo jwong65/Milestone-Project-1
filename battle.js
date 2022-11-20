@@ -6,13 +6,19 @@ function checkVictory(){
         window.alert("Congratulations enemy health has dropped to zero.")
     }
 }
+function checkManyPlayed(){
+    if (numberofCardplayed=3){
+        //Opponent turn will start.
+    }
+    resetTurn(numberofCardplayed)
+}
 
 
 //A function will be needed to reset these after every turn.
-function resetTurn(numberofCardplayed, turnDefense, damageAllowed){
+function resetTurn(numberofCardplayed){
+    //turnDefense, damageAllowed
     numberofCardplayed = 0;
-    turnDefense =0;
-    damageAllowed =true;
+    // damageAllowed =true;
 }
 //Example call would be resetTurn(numberofCardplayed, turnDefense, damageAllowed) This should be called when endTurn is called, but because endTurn is in index and it is above the declaration of battle.js it may need to be moved.
 
