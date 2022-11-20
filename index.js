@@ -13,9 +13,17 @@ var deck =[]
 const discardpile = []
 
 const hand = []
-//console.log(hand)
 //I'm thinking of using an array to keep track of what cards the player has.
 
+//This variable will keep track of how many number of cards were played this turn. This is because I put an arbitrary limit of 3 cards played per turn
+var numberofCardplayed =0;
+
+//This variable will keep track of how much defense is being applied on the turn. This needs to be applied to damage cards and reduction cards will incresae this.
+var turnDefense =0;
+var opponentDefense =0;
+
+//Allowing damage cards to be played variable. This might be a bit much, possibly postMVP type of implemtation
+var damageAllowed = true;
 
 function displayHealth(healthnum, idname){
     let innerHealth = healthnum
