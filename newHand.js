@@ -93,6 +93,8 @@ function newCard(deck, hand, discarded){
     newImage.style.height ='100px'
     document.getElementById('hand').appendChild(newImage);
     let drawnCard = deck.pop()
+    hand.push(drawnCard)
+
     //We do not want the information to be displayed just yet
     //Draw was undefined, because top_of_deck needs to be deck.length-1.
     newImage.addEventListener('mouseover',()=>{
@@ -102,12 +104,14 @@ function newCard(deck, hand, discarded){
         displayInformation("Your deck currently has " + deck.length + " card(s)." , "info")
     })
     newImage.addEventListener("click", ()=>{
+         //This removes the card from the hand when used.
         newImage.remove()
         console.log(discardpile)
         discarded.push(drawnCard)
-        
-        //This removes the card from the hand when used.
-
+        //To remove the card from the hand I cannot use .pop because that removes the last position of the array. 
+        //As a quick fix, I can just pop because I'm only checking for hand.length at the moment
+        hand.pop()
+       
         // console.log(draw.cardID)
         if (draw.cardID =='1'){
             card1Function(card1, "HP")
@@ -117,14 +121,20 @@ function newCard(deck, hand, discarded){
             card2Function(card2, 'opphealth')
             console.log("Card 2 was used")
         }
+        else if (draw.cardID == '3'){
+            card3Function(card3, 'player')
+        }
+        else if (draw.cardID =='4'){
+            card4Function()
+        }
         //If template literals are not possible, I might just have to use if else statments to get the right effect with the right card.
+        displayCardsinHand()
     
     })
     //Testing for hand array having the card that is popped from the deck
     // console.log("The deck is", deck)
     // console.log("The card ripped from the deck is", drawnCard)
     // console.log(hand)
-    hand.push(drawnCard)
     displayCardsinHand()
     // console.log("The hand is now ",handarr)
     

@@ -18,7 +18,9 @@ function cardCreation(type, value, text, cardID){
 const card1 = new cardCreation('heal', 5, 'This card will heal you for 5 health', '1')
 const card2 = new cardCreation('damage', 2, "This card does 2 damage to your opponent", '2')
 const card3 = new cardCreation('block', 1, "The next attack you take will be reduced by 1. Only applied to the next turn", '3')
-const card4 = new cardCreation('recycle', null, "All cards in the discard pile are shuffled back into the deck. This card cannot be discarded.", '4')
+//I'm not certain why it doesn't get every copy back. In the discardpile array, there appears to be an array so I'm going to change this to add 2 damage cards and another copy of itself.
+const card4 = new cardCreation('recycle', null, "A random number of cards in the discard pile will be added back to the deck.", '4')
+
 const card5 = new cardCreation('draw', 1 , "You can draw one additional card this turn. You cannot use damage cards if you play this card", '5')
 //Instead of creating new cardCreation of the damage 2 card, I will push additional copies of the card to generate the deck.
 const card6 = new cardCreation('damage', null, "This card does damage equal to the number of cards you're holding.", '6')

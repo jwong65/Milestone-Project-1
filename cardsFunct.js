@@ -28,6 +28,7 @@ function card2Function(card2, target){
 // console.log(enemyhealth)
 
 //Card 3 function to reduce damage
+//This function could be used against the player if I have time post-MVP
 function card3Function(card3, target){
     //target can be turnDefense or oppDefense
     if (target =="player"){
@@ -38,11 +39,12 @@ function card3Function(card3, target){
     }
 }
 
-//Card 4 function to recyle the discard pile. To make it simple the opponent will never run out of cards so they will not play this card.
+//Card 4 function to add cards back to the deck.
 function card4Function(){
     discardpile.forEach(()=>{
         returnCard= discardpile.pop()
+        console.log(returnCard)
         deck.push(returnCard)
-        shuffleDeck()
+        shuffleDeck(deck)
     })
 }
