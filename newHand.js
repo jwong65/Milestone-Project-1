@@ -118,53 +118,53 @@ function newCard(deck, hand, discarded){
        
         // console.log(draw.cardID)
         if (draw.cardID =='1'){
+            numberofCardplayed+=1
             card1Function(card1, "HP")
             console.log("Card 1 was used")
-            numberofCardplayed+=1
-            console.log(numberofCardplayed + " :Number of cards played")
+            // console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }
         else if (draw.cardID =='2'){
+            numberofCardplayed+=1
             card2Function(card2, 'opphealth')
             console.log("Card 2 was used")
-            
-            numberofCardplayed+=1
-            console.log(numberofCardplayed + " :Number of cards played")
+            // console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }
         else if (draw.cardID == '3'){
+            numberofCardplayed+=1
             card3Function('opphealth')
             console.log("Card 3 was used")
             
-            numberofCardplayed+=1
-            console.log(numberofCardplayed + " :Number of cards played")
+            // console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }
         else if (draw.cardID =='4'){
+            numberofCardplayed+=1
             card4Function()
             console.log("Card 4 was used")
-            numberofCardplayed+=1
-            console.log(numberofCardplayed + " :Number of cards played")
+            // console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }
         else if (draw.cardID =='5'){
+            numberofCardplayed+=1
             card5Function()
             console.log("Card 5 was used")
             
-            numberofCardplayed+=1
-            console.log(numberofCardplayed + " :Number of cards played")
+            // console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }
         else if (draw.cardID =='6'){
+            numberofCardplayed+=1
             card6Function('opphealth')
             console.log("Card 6 was used")
-            numberofCardplayed+=1
-            console.log(numberofCardplayed + " :Number of cards played")
+            
+            // console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }
