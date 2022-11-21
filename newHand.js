@@ -121,6 +121,7 @@ function newCard(deck, hand, discarded){
             card1Function(card1, "HP")
             console.log("Card 1 was used")
             numberofCardplayed+=1
+            console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }
@@ -129,6 +130,7 @@ function newCard(deck, hand, discarded){
             console.log("Card 2 was used")
             
             numberofCardplayed+=1
+            console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }
@@ -137,6 +139,7 @@ function newCard(deck, hand, discarded){
             console.log("Card 3 was used")
             
             numberofCardplayed+=1
+            console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }
@@ -144,6 +147,7 @@ function newCard(deck, hand, discarded){
             card4Function()
             console.log("Card 4 was used")
             numberofCardplayed+=1
+            console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }
@@ -152,6 +156,7 @@ function newCard(deck, hand, discarded){
             console.log("Card 5 was used")
             
             numberofCardplayed+=1
+            console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }
@@ -159,6 +164,7 @@ function newCard(deck, hand, discarded){
             card6Function('opphealth')
             console.log("Card 6 was used")
             numberofCardplayed+=1
+            console.log(numberofCardplayed + " :Number of cards played")
             checkVictory()
             checkManyPlayed()
         }

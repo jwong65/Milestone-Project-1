@@ -38,6 +38,8 @@ function card3Function(target){
     // else{
     //     opponentDefense+=card3.value
     // }
+    console.log(numberofCardplayed + " Number of Cards played")
+    console.log(numberofCardplayed*3 + "Times 3 = damage")
     enemyhealth = enemyhealth - (numberofCardplayed*3)
     displayHealth(enemyhealth, target)
 }
