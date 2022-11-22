@@ -50,6 +50,9 @@ div{
     text-align: center;
     background-color: bisque;
 }
+#tip{
+    border: 2px solid black;
+}
 /* 
 #hand{
     
