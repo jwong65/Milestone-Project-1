@@ -15,26 +15,26 @@ div{
 }
 
 /* Div styling*/
+.characterinfo{
+    color: aliceblue;
+    text-align: center;
+
+}
 
 #opponent{
-    color: antiquewhite;
     position: relative;
     left: 20px;
     z-index: 0;
     height:200px;
     width: 200px;
-    text-align: center;
-    
 }
 #player{
-    color:aliceblue;
     position: relative;
     left: 1150px;
     top: 75px;
     z-index: 0;
     height:200px;
     width: 200px;
-    text-align: center;
 
 }
 .health{
@@ -53,10 +53,10 @@ div{
     background-color: bisque;
 }
 #tips{
-    width:500px;
+    width:400px;
     border: 2px solid whitesmoke;
     position: relative;
-    left: 600px;
+    left: 1150px;
 }
 /* 
 #hand{
