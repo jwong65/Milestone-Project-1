@@ -11,8 +11,8 @@ function oppHand(){
     oppHand.style.backgroundColor ='#f5ecdc'
     document.body.append(oppHand)
     oppHand.style.position='relative'
-    oppHand.style.left ="550px"
-    oppHand.style.bottom = "500px"
+    oppHand.style.left ="350px"
+    oppHand.style.bottom = "650px"
 
     return oppHand
 }
