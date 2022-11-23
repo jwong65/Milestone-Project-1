@@ -48,10 +48,11 @@ function card3Function(target){
 //Card 4 function to add cards back to the deck. 
 function card4Function(){
     discardpile.forEach(()=>{
-        returnCard= discardpile.pop()
+        let returnCard= discardpile.pop()
         console.log(returnCard)
         deck.push(returnCard)
         shuffleDeck(deck)
+        console.log(deck.length)
     })
 }
 

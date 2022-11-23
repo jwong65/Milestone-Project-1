@@ -105,13 +105,15 @@ function newCard(deck, hand, discarded){
     newImage.addEventListener('mouseout', ()=>{
         displayInformation("Hover your mouse over each card to see what each card will do. Select the Rules button to read the rules" , "info")
     })
-    newImage.addEventListener("click", ()=>{
+    newImage.addEventListener("click", (e)=>{
         //We need this to keep the player from playing only 3 cards a turn.
-        
+        console.log(e.target)
         //This removes the card from the hand when used.
         newImage.remove()
-        //console.log(discardpile)
+
+        //Issue is that drawnCard is being overwritten every time newCard is being called so it is not neccesarily the same card being discarded after play.
         discarded.push(drawnCard)
+        console.log(discardpile)
         //To remove the card from the hand I cannot use .pop because that removes the last position of the array. 
         //As a quick fix, I can just pop because I'm only checking for hand.length at the moment
         hand.pop()
