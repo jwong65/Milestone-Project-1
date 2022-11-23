@@ -54,9 +54,11 @@ div{
 }
 #tips{
     width:400px;
+    color: whitesmoke;
     border: 2px solid whitesmoke;
     position: relative;
     left: 1150px;
+    font-weight: bold;
 }
 /* 
 #hand{
