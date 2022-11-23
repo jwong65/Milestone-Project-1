@@ -93,9 +93,13 @@ function newCard(deck, hand, discarded){
     //newImage.src = URL, this will just be a placeholder for now until I can find an image for the cards so it won't be confusing
 
     newImage.style.height ='100px'
+
     document.getElementById('hand').appendChild(newImage);
     let drawnCard = deck.pop()
+    console.log(drawnCard==draw)
     hand.push(drawnCard)
+    
+    newImage.dataset.cardId = drawnCard.cardID 
 
     //We do not want the information to be displayed just yet
     //Draw was undefined, because top_of_deck needs to be deck.length-1.
@@ -107,7 +111,7 @@ function newCard(deck, hand, discarded){
     })
     newImage.addEventListener("click", (e)=>{
         //We need this to keep the player from playing only 3 cards a turn.
-        console.log(e.target)
+        console.log(e.target.dataset.cardId)
         //This removes the card from the hand when used.
         newImage.remove()
 
@@ -116,7 +120,14 @@ function newCard(deck, hand, discarded){
         console.log(discardpile)
         //To remove the card from the hand I cannot use .pop because that removes the last position of the array. 
         //As a quick fix, I can just pop because I'm only checking for hand.length at the moment
-        hand.pop()
+        //splice, destructive
+
+        const index = hand.findIndex(c=>{
+            return c.cardID == e.target.dataset.cardId
+        })
+        hand.splice(index, 1)
+        console.log(hand)
+        //hand.pop()
        
         // console.log(draw.cardID)
         if (draw.cardID =='1'){
