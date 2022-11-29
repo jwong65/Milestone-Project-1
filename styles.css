@@ -1,6 +1,10 @@
 body{
     background-color: #435c8a;
 }
+h1{
+    color:azure;
+    text-align: center;
+}
 div{
     /*border: 2px solid black;
     */
