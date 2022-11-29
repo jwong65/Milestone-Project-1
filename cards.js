@@ -20,7 +20,7 @@ const card2 = new cardCreation('damage', 3, "This card does 3 damage to your opp
 const card3 = new cardCreation('damage', 3, "This card will do damage equal to the number of cards played this turn, (including this one) times 3", '3')
 //I'm not certain why it doesn't get every copy back. In the discardpile array, there appears to be an array so I'm going to change this to add 2 damage cards and another copy of itself.
 //IT could be because I could not get a way to pop the correct card out of the hand, but it shouldn't matter because I push the drawnCard into the discardpile when used.
-const card4 = new cardCreation('recycle', null, "A random number of cards in the discard pile will be added back to the deck.", '4')
+const card4 = new cardCreation('recycle', null, "All cards in the discard pile will be added back to the deck.", '4')
 
 const card5 = new cardCreation('draw', 1 , "You can draw two cards.", '5')
 //Instead of creating new cardCreation of the damage 2 card, I will push additional copies of the card to generate the deck.
