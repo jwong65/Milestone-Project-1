@@ -57,11 +57,11 @@ div{
     background-color: bisque;
 }
 #tips{
-    width:400px;
+    width:600px;
     color: whitesmoke;
     border: 2px solid whitesmoke;
     position: relative;
-    left: 1150px;
+    left: 950px;
     top: 50px;
     font-weight: bold;
 }
