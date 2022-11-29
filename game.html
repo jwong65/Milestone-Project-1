@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Milestone Card game</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
+    <main>
+        <div class='characterinfo' id="opponent">
+            <table>
+                <tr>
+                    <td>Opponent</td>
+                </tr>
+            </table>
+            This is the opponent's health.
+            <div class = "health" id="opphealth"></div>
+        </div>
+        <!--<health></health> could also be used?-->
+        <div id = "tips">Tips to remember:
+            <br>
+            Your turn will end after you play any 3 cards.
+            <br>
+            If you draw using the draw button your turn will end and the opponent's turn will begin.
+            <br>
+            The opponent will always do damage equal to their hand size and then draw an additional card.
+        </div>
+        
+        <div class='characterinfo' id="player">
+            <table>
+                <tr>
+                    <td id="PlayerName">Test</td>
+                </tr>
+                <tr>
+                    <td id="NumCardsHand"></td>
+                </tr>
+            </table>
+            <div>This is your health pool.
+                <div class ="health" id ="HP"></div>
+            </div>
+        </div>
+        
+<!-- <div id="hand"></div> This div is unneccesary as the function will createEleemtn with an id of hand -->
+        <div id="info"></div>
+        <!-- <button id="next">Next</button> -->
+    </main>
+    <footer>
+        <button id="showdeck">Show deck</button>
+        <button id="draw">Draw</button>
+        <button id="rules">Rules</button>
+        <button id="endturn">End Turn</button>
+        <button id="showoppturn">Review Opponent's turn</button>
+        <!-- <button id="newgame">New Game</button> -->
+    </footer>
+        <!--Scripts-->
+        <script src="./index.js"></script>
+        <script src="./cards.js"></script>
+        <script src="./cardsFunct.js"></script>
+        <script src="./opponentHand.js"></script>
+        <script src="./battle.js"></script>
+        <script src="./newHand.js"></script>
 </body>
 </html>
