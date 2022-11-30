@@ -88,7 +88,7 @@ document.getElementById('draw').addEventListener('click', ()=>{
         numberofCardplayed = 3
         checkManyPlayed()
     } else{
-        displayInformation("End turn has been canceled", 'info')
+        displayInformation("Drawing to end the turn has been canceled", 'info')
     }
 })
 
