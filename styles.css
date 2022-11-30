@@ -6,9 +6,10 @@ h1{
     text-align: center;
 }
 h2{
+    color: rgb(220, 220, 220);
     position: relative;
     top: 300px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     text-align: center;
 }
 div{
@@ -22,6 +23,13 @@ div{
     padding-right: 25px;
     padding-bottom: 50px;
     */
+}
+/*Link styling*/
+a:link{
+    color: blue;
+}
+a:visited{
+    color: paleturquoise;
 }
 
 /* Div styling*/
