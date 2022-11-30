@@ -76,7 +76,8 @@ div{
     height: 150px;
     left: 700px;
 } 
-#showdeck, #draw, #rules, #endturn, #showoppturn{
+
+#showdeck, #draw, #rules, #endturn, #showoppturn, #newgameIn{
     position: absolute;
     bottom: 100px;
     z-index: 1;
@@ -92,6 +93,9 @@ div{
 }
 #showoppturn{
     left:275px;
+}
+#newgameIn{
+    left: 550px;
 }
 /* 
 #next{
