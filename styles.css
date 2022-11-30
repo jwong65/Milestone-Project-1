@@ -71,8 +71,10 @@ div{
 #newgame{
     background-color: rgb(0, 242, 255);
     text-align: center;
-    position: relative;
-    left: 800px;
+    position: fixed;
+    width: 300px;
+    height: 150px;
+    left: 700px;
 } 
 #showdeck, #draw, #rules, #endturn, #showoppturn{
     position: absolute;
