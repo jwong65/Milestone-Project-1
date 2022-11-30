@@ -31,6 +31,9 @@ a:link{
 a:visited{
     color: paleturquoise;
 }
+a:hover, a:focus{
+    color: orchid;
+}
 
 /* Div styling*/
 .characterinfo{
