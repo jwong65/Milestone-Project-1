@@ -85,9 +85,15 @@ document.getElementById('endturn').addEventListener('click', ()=>{
 //Event listener should draw a card, that will be done later.
 document.getElementById('draw').addEventListener('click', ()=>{
     //Currently commenting out endTurn so I can test quicker.
-    DrawEndTurn("Draw one card and end your turn?")
-    numberofCardplayed = 3
-    checkManyPlayed()
+    
+    //This needs to be a confirm so the player can say no.
+    if(confirm("Draw one card and end your turn?")==true){
+        DrawEndTurn("Draw one card and end your turn?")
+        numberofCardplayed = 3
+        checkManyPlayed()
+    } else{
+        displayInformation("End turn has been canceled", 'info')
+    }
 })
 
 document.getElementById('showoppturn').addEventListener('click',()=>{
