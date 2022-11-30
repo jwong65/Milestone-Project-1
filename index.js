@@ -32,17 +32,13 @@ function displayHealth(healthnum, idname){
 //endTurn function should also signal the beginning for the opponent's turn
 //https://www.w3schools.com/js/js_popup.asp
 
-function DrawEndTurn(text){
-    if (confirm(text)){
-     displayInformation("Turn has ended.", "info")
+function DrawEndTurn(){
+    displayInformation("Turn has ended.", "info")
         //console.log("Turn "+ turnNumber+ " Ended")
-        newCard(deck, hand, discardpile)
-        displayCardsinHand()
+    //This is the one card you draw for using the draw button
+    newCard(deck, hand, discardpile)
+    displayCardsinHand()
         //turnNumber++ Turn number became unneccesary but was important for helping find out errors.
-
-    } else{
-        return
-    }
 }
 //Currently this has no use case, but there should be a scenario where the turn will end because of a condition.
 function endTurn(){
@@ -88,7 +84,7 @@ document.getElementById('draw').addEventListener('click', ()=>{
     
     //This needs to be a confirm so the player can say no.
     if(confirm("Draw one card and end your turn?")==true){
-        DrawEndTurn("Draw one card and end your turn?")
+        DrawEndTurn()
         numberofCardplayed = 3
         checkManyPlayed()
     } else{
