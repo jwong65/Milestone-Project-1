@@ -3,11 +3,14 @@
 //Player will win if health ever drops to zero.
 function checkVictory(){
     if (enemyhealth<=0){
-        window.alert("Congratulations, You Win: enemy health has dropped to zero.")
+        window.alert("Congratulations, You Win: enemy health has dropped to zero. \nPress the new game button to start a new game")
     }
     if (playerhealth<=0){
-        window.alert("Unfortunate. Game Over: Your health has droped to zero.")
+        window.alert("Unfortunate. Game Over: Your health has droped to zero. \nPress the new game button to start a new game")
     }
+}
+function loadHomepage(){
+
 }
 function checkManyPlayed(){
     if (numberofCardplayed==3){
