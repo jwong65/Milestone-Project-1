@@ -2,8 +2,6 @@
 //Card 1 function to heal by value
 function card1Function(card1, target){
     if (Number(card1.value)+playerhealth > 20){
-        //Error found, when you write directedHealth it does not change the global variable. 
-        //Template literals are used to change the global variable, they are broken once again will ask in class about them ${}
         playerhealth=20;
         //console.log(directedHealth)
         displayHealth(playerhealth, target)
