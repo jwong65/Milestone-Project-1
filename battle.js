@@ -40,7 +40,6 @@ function checkManyPlayed(){
 // }
 //Example call would be resetTurn(numberofCardplayed, turnDefense, damageAllowed) This should be called when endTurn is called, but because endTurn is in index and it is above the declaration of battle.js it may need to be moved.
 
-
 //Opponent turn will have to be put on a setTimeout() that will be okay enough that it doesn't seem jarring.
 //A button will be needed to show the log of what the opponent has done.
 
