@@ -8,6 +8,7 @@ function askName(){
     let playerName;
     let selection = prompt("Please enter your character name:")
     //this is used if the player does not answer the question or cancels the prompt
+    //This makes it so that the player will be named Player 1 if there is no selection put into the the playername prompt
     if (selection== null || selection == "")
     {
         playerName="Player 1"
