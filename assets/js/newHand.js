@@ -127,61 +127,99 @@ function newCard(deck, hand, discarded){
             return c.cardID == e.target.dataset.cardId
         })
         hand.splice(index, 1)
-        console.log(hand)
-        //hand.pop()
        
         // console.log(draw.cardID)
-        if (draw.cardID =='1'){
-            numberofCardplayed+=1
-            card1Function(card1, "HP")
-            console.log("Card 1 was used")
-            // console.log(numberofCardplayed + " :Number of cards played")
-            checkVictory()
-            checkManyPlayed()
+
+        switch(draw.cardID){
+            case 1:
+                card1Function(card1, 'HP')
+                console.log(numberofCardplayed + " cards played")
+                checkVictory()
+                checkManyPlayed()
+                break
+            case '2':
+                card2Function(card2, 'opphealth')
+                console.log(numberofCardplayed + " cards played")
+                checkVictory()
+                checkManyPlayed()
+                break
+            case '3':
+                card3Function('opphealth')
+                console.log(numberofCardplayed + " cards played")
+                checkVictory()
+                checkManyPlayed()
+                break
+            case '4':
+                card4Function()
+                console.log(numberofCardplayed + " cards played")
+                checkVictory()
+                checkManyPlayed()
+                break
+            case '5':
+                card5Function()
+                console.log(numberofCardplayed + " cards played")
+                checkVictory()
+                checkManyPlayed()
+                break
+            case '6':
+                card6Function('opphealth')
+                console.log(numberofCardplayed + " cards played")
+                checkVictory()
+                checkManyPlayed()
+                break
         }
-        else if (draw.cardID =='2'){
-            numberofCardplayed+=1
-            card2Function(card2, 'opphealth')
-            console.log("Card 2 was used")
-            // console.log(numberofCardplayed + " :Number of cards played")
-            checkVictory()
-            checkManyPlayed()
-        }
-        else if (draw.cardID == '3'){
-            numberofCardplayed+=1
-            card3Function('opphealth')
-            console.log("Card 3 was used")
+
+        // if (draw.cardID =='1'){
+        //     numberofCardplayed+=1
+        //     card1Function(card1, "HP")
+        //     //console.log("Card 1 was used")
+        //     // console.log(numberofCardplayed + " :Number of cards played")
+        //     checkVictory()
+        //     checkManyPlayed()
+        // }
+        // else if (draw.cardID =='2'){
+        //     numberofCardplayed+=1
+        //     card2Function(card2, 'opphealth')
+        //     //console.log("Card 2 was used")
+        //     // console.log(numberofCardplayed + " :Number of cards played")
+        //     checkVictory()
+        //     checkManyPlayed()
+        // }
+        // else if (draw.cardID == '3'){
+        //     numberofCardplayed+=1
+        //     card3Function('opphealth')
+        //     console.log("Card 3 was used")
             
-            // console.log(numberofCardplayed + " :Number of cards played")
-            checkVictory()
-            checkManyPlayed()
-        }
-        else if (draw.cardID =='4'){
-            numberofCardplayed+=1
-            card4Function()
-            console.log("Card 4 was used")
-            // console.log(numberofCardplayed + " :Number of cards played")
-            checkVictory()
-            checkManyPlayed()
-        }
-        else if (draw.cardID =='5'){
-            numberofCardplayed+=1
-            card5Function()
-            console.log("Card 5 was used")
+        //     // console.log(numberofCardplayed + " :Number of cards played")
+        //     checkVictory()
+        //     checkManyPlayed()
+        // }
+        // else if (draw.cardID =='4'){
+        //     numberofCardplayed+=1
+        //     card4Function()
+        //     console.log("Card 4 was used")
+        //     // console.log(numberofCardplayed + " :Number of cards played")
+        //     checkVictory()
+        //     checkManyPlayed()
+        // }
+        // else if (draw.cardID =='5'){
+        //     numberofCardplayed+=1
+        //     card5Function()
+        //     console.log("Card 5 was used")
             
-            // console.log(numberofCardplayed + " :Number of cards played")
-            checkVictory()
-            checkManyPlayed()
-        }
-        else if (draw.cardID =='6'){
-            numberofCardplayed+=1
-            card6Function('opphealth')
-            console.log("Card 6 was used")
+        //     // console.log(numberofCardplayed + " :Number of cards played")
+        //     checkVictory()
+        //     checkManyPlayed()
+        // }
+        // else if (draw.cardID =='6'){
+        //     numberofCardplayed+=1
+        //     card6Function('opphealth')
+        //     console.log("Card 6 was used")
             
-            // console.log(numberofCardplayed + " :Number of cards played")
-            checkVictory()
-            checkManyPlayed()
-        }
+        //     // console.log(numberofCardplayed + " :Number of cards played")
+        //     checkVictory()
+        //     checkManyPlayed()
+        // }
         //If template literals are not possible, I might just have to use if else statments to get the right effect with the right card.
         displayCardsinHand()
     
