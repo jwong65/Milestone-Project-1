@@ -3,15 +3,12 @@
 function card1Function(card1, target){
     if (Number(card1.value)+playerhealth > 20){
         playerhealth=20;
-        //console.log(directedHealth)
         displayHealth(playerhealth, target)
-        console.log("Card 1 activated")
         numberofCardplayed+=1
     }
     else{
         playerhealth=playerhealth+card1.value
         displayHealth(playerhealth, target)
-        console.log("Card1 activated")
         numberofCardplayed+=1
     }
 }
@@ -32,10 +29,8 @@ function card3Function(target){
 function card4Function(){
     discardpile.forEach(()=>{
         let returnCard= discardpile.pop()
-        console.log(returnCard)
         deck.push(returnCard)
         shuffleDeck(deck)
-        console.log(deck.length)
     })
     numberofCardplayed+=1
 }

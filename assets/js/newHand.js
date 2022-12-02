@@ -97,7 +97,6 @@ function newCard(deck, hand, discarded){
 
     document.getElementById('hand').appendChild(newImage);
     let drawnCard = deck.pop()
-    console.log(drawnCard==draw)
     hand.push(drawnCard)
     
     newImage.dataset.cardId = drawnCard.cardID 

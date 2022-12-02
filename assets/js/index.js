@@ -1,7 +1,6 @@
 var playerhealth = 20;
 var enemyhealth = 20;
 var turnNumber = 1;
-// console.log(playerhealth)
 
 //The cards will need to be objects that way they have infomration in them
 // It can no longer be var because it will be shuffled.
@@ -34,7 +33,6 @@ function displayHealth(healthnum, idname){
 
 function DrawEndTurn(){
     displayInformation("Turn has ended.", "info")
-        //console.log("Turn "+ turnNumber+ " Ended")
     //This is the one card you draw for using the draw button
     newCard(deck, hand, discardpile)
     displayCardsinHand()
