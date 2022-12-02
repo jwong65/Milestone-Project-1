@@ -186,15 +186,10 @@ function newCard(deck, hand, discarded){
         displayCardsinHand()
     
     })
-    //Testing for hand array having the card that is popped from the deck
-    // console.log("The deck is", deck)
-    // console.log("The card ripped from the deck is", drawnCard)
-    // console.log(hand)
     displayCardsinHand()
-    // console.log("The hand is now ",handarr)
     
 }
-// For testing purpose adding additional cards to see where they will be appended
+// This is the opening hand
 newCard(deck, hand, discardpile)
 newCard(deck, hand, discardpile)
 newCard(deck, hand, discardpile)
