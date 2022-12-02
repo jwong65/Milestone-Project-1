@@ -112,13 +112,11 @@ function newCard(deck, hand, discarded){
     })
     newImage.addEventListener("click", (e)=>{
         //We need this to keep the player from playing only 3 cards a turn.
-        console.log(e.target.dataset.cardId)
         //This removes the card from the hand when used.
         newImage.remove()
 
         //Issue is that drawnCard is being overwritten every time newCard is being called so it is not neccesarily the same card being discarded after play.
         discarded.push(drawnCard)
-        console.log(discardpile)
         //To remove the card from the hand I cannot use .pop because that removes the last position of the array. 
         //As a quick fix, I can just pop because I'm only checking for hand.length at the moment
         //splice, destructive
@@ -128,42 +126,35 @@ function newCard(deck, hand, discarded){
         })
         hand.splice(index, 1)
        
-        // console.log(draw.cardID)
 
         switch(draw.cardID){
             case 1:
                 card1Function(card1, 'HP')
-                console.log(numberofCardplayed + " cards played")
                 checkVictory()
                 checkManyPlayed()
                 break
             case '2':
                 card2Function(card2, 'opphealth')
-                console.log(numberofCardplayed + " cards played")
                 checkVictory()
                 checkManyPlayed()
                 break
             case '3':
                 card3Function('opphealth')
-                console.log(numberofCardplayed + " cards played")
                 checkVictory()
                 checkManyPlayed()
                 break
             case '4':
                 card4Function()
-                console.log(numberofCardplayed + " cards played")
                 checkVictory()
                 checkManyPlayed()
                 break
             case '5':
                 card5Function()
-                console.log(numberofCardplayed + " cards played")
                 checkVictory()
                 checkManyPlayed()
                 break
             case '6':
                 card6Function('opphealth')
-                console.log(numberofCardplayed + " cards played")
                 checkVictory()
                 checkManyPlayed()
                 break
