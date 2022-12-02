@@ -80,6 +80,13 @@ document.getElementById('draw').addEventListener('click', ()=>{
     }
 })
 
-document.getElementById('showoppturn').addEventListener('click',()=>{
+//A button will be needed to show the log of what the opponent has done.
 
+document.getElementById('showoppturn').addEventListener('click',()=>{
+    if (turnNumber==1){
+        displayInformation("This is the first turn, the opponent has not made a turn", 'info')
+    }
+    else{
+        displayInformation("This a log of what your opponent has done on the previous turn. The opponent struck for "+ (numofOpponentCards-1) +" damage. They then drew 2 cards", "info")
+    }
 })
