@@ -9,9 +9,7 @@ function checkVictory(){
         window.alert("Unfortunate. Game Over: Your health has droped to zero. \nPress the new game button to start a new game")
     }
 }
-function loadHomepage(){
 
-}
 function checkManyPlayed(){
     if (numberofCardplayed==3){
         //Opponent turn will start.
