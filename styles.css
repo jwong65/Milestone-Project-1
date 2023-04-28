@@ -94,10 +94,13 @@ a:hover, a:focus{
 #newgame{
     background-color: rgb(0, 242, 255);
     text-align: center;
-    position: fixed;
-    width: 300px;
+    position: relative;
+    top: 50%;
+    width: 50%;
     height: 150px;
-    left: 700px;
+    /* margin: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
 } 
 
 #showdeck, #draw, #rules, #endturn, #showoppturn, #newgameIn{
