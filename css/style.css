@@ -11,14 +11,9 @@ body #newgame {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   height: 150px;
 }
-
-/* margin: 0;
--ms-transform: translateY(-50%);
-transform: translateY(-50%); */
 
 /*# sourceMappingURL=style.css.map */

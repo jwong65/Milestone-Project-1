@@ -9,7 +9,7 @@ body{
     }
     #newgame{
         text-align: center;
-        @include set_centerposition(50%);
+        @include set_centerposition;
         height: 150px;
     }
 }
