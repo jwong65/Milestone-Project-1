@@ -2,4 +2,8 @@
 
 body{
     background-color: $backgroundprimary;
+    h1{
+        color: $primaryfontcolor;
+        text-align: center;
+    }
 }
