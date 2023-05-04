@@ -4,6 +4,7 @@ body {
 body h1, body h2, body h3 {
   color: azure;
   text-align: center;
+  align-items: center;
 }
 body #newgame {
   text-align: center;
@@ -13,7 +14,8 @@ body #newgame {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  height: 150px;
+  width: 10em;
+  height: 10em;
 }
 
 /*# sourceMappingURL=style.css.map */

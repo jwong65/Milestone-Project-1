@@ -6,10 +6,11 @@ body{
     h1, h2, h3{
         color: $primaryfontcolor;
         text-align: center;
+        align-items: center;
     }
     #newgame{
         text-align: center;
         @include set_centerposition;
-        height: 150px;
+        @include squaresides(10em)
     }
 }
