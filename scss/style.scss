@@ -1,9 +1,15 @@
 @import "colors";
+@import 'utilities';
 
 body{
     background-color: $backgroundprimary;
     h1{
         color: $primaryfontcolor;
         text-align: center;
+    }
+    #newgame{
+        text-align: center;
+        @include set_centerposition(50%);
+        height: 150px;
     }
 }

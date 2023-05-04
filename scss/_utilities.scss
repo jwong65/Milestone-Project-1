@@ -1,0 +1,9 @@
+@mixin set_centerposition($value){
+    margin: 0;
+    position: absolute;
+    top: $value;
+    left: $value;
+    width: $value;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
