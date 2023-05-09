@@ -13,4 +13,11 @@ main{
         z-index: 0;
         @include squaresides(200px)
     }
+    #player{
+        position: relative;
+        left: 1150px;
+        top: 75px;
+        z-index: 0;
+        @include squaresides(200px)
+    }
 }
