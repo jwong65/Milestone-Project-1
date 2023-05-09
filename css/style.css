@@ -5,6 +5,7 @@ body h1, body h2, body h3 {
   color: azure;
   text-align: center;
   align-items: center;
+  padding: 10px 10px 10px 10px;
 }
 body #newgame {
   text-align: center;
@@ -16,6 +17,7 @@ body #newgame {
   transform: translate(-50%, -50%);
   width: 10em;
   height: 10em;
+  padding: 10px 10px 10px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
