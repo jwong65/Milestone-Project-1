@@ -12,3 +12,7 @@
     width: $value;
     height: $value;
 }
+
+@mixin samepadding($value){
+    padding: $value $value $value $value
+}
