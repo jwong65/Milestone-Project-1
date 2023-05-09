@@ -23,5 +23,11 @@ div{
         z-index: 0;
         @include squaresides(200px)
     }
+    #info{
+        position: absolute;
+        top: 355px;
+        width: 850px;
+        background-color: $backgroundsecondary;
+    }
 }
 
