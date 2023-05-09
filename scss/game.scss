@@ -24,6 +24,7 @@ div{
         @include squaresides(200px)
     }
     #info{
+        color: $secondarygametext;
         position: absolute;
         top: 355px;
         width: 850px;

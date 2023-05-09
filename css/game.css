@@ -46,4 +46,10 @@ div #tips {
   font-weight: bold;
 }
 
+#showdeck, #draw, #rules, #endturn, #showoppturn, #newgameIn {
+  position: absolute;
+  bottom: 100px;
+  z-index: 1;
+}
+
 /*# sourceMappingURL=game.css.map */
