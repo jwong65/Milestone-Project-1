@@ -7,10 +7,12 @@ body{
         color: $primaryfontcolor;
         text-align: center;
         align-items: center;
+        @include samepadding(10px);
     }
     #newgame{
         text-align: center;
         @include set_centerposition;
-        @include squaresides(10em)
+        @include squaresides(10em);
+        @include samepadding (10px);
     }
 }
