@@ -1,9 +1,33 @@
+.health {
+  border: 2px solid black;
+  z-index: 1;
+  position: relative;
+  width: 1px;
+  text-align: center;
+  background-color: red;
+}
+
 main {
   color: whitesmoke;
 }
 main .characterinfo {
   color: aliceblue;
   text-align: center;
+}
+main #opponent {
+  position: relative;
+  left: 20px;
+  z-index: 0;
+  width: 200px;
+  height: 200px;
+}
+main #player {
+  position: relative;
+  left: 1150px;
+  top: 75px;
+  z-index: 0;
+  width: 200px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=game.css.map */
