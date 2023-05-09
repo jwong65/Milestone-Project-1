@@ -7,4 +7,10 @@ main{
         color:$secondarygametext;
         text-align: center;
     }
+    #opponent{
+        position: relative;
+        left: 20px;
+        z-index: 0;
+        @include squaresides(200px)
+    }
 }
