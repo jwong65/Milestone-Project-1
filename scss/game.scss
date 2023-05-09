@@ -29,5 +29,15 @@ div{
         width: 850px;
         background-color: $backgroundsecondary;
     }
+    
+    #tips{
+        width:600px;
+        border: 2px solid $gametext;
+        position: relative;
+        left: 950px;
+        top: 50px;
+        font-weight: bold;
+    }
+
 }
 
