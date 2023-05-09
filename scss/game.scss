@@ -1,6 +1,10 @@
 @import "colors";
 @import "utilities";
 
-div{
+main{
     color: $gametext;
+    .characterinfo{
+        color:$secondarygametext;
+        text-align: center;
+    }
 }
