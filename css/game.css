@@ -1,5 +1,9 @@
-div {
+main {
   color: whitesmoke;
+}
+main .characterinfo {
+  color: aliceblue;
+  text-align: center;
 }
 
 /*# sourceMappingURL=game.css.map */
