@@ -7,21 +7,23 @@
   background-color: red;
 }
 
-main {
+div {
+  background-color: #435c8a;
   color: whitesmoke;
-}
-main .characterinfo {
-  color: aliceblue;
   text-align: center;
+  padding: 15px 15px 15px 15px;
 }
-main #opponent {
+div .characterinfo {
+  color: aliceblue;
+}
+div #opponent {
   position: relative;
   left: 20px;
   z-index: 0;
   width: 200px;
   height: 200px;
 }
-main #player {
+div #player {
   position: relative;
   left: 1150px;
   top: 75px;

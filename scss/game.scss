@@ -2,11 +2,13 @@
 @import "colors";
 @import "utilities";
 
-main{
+div{
+    background-color: $backgroundprimary;
     color: $gametext;
+    text-align: center;
+    @include samepadding(15px);
     .characterinfo{
         color:$secondarygametext;
-        text-align: center;
     }
     #opponent{
         position: relative;
