@@ -1,3 +1,16 @@
+/*Link styling*/
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: paleturquoise;
+}
+
+a:hover, a:focus {
+  color: orchid;
+}
+
 body {
   background-color: #435c8a;
 }
