@@ -31,5 +31,19 @@ div #player {
   width: 200px;
   height: 200px;
 }
+div #info {
+  position: absolute;
+  top: 355px;
+  width: 850px;
+  background-color: bisque;
+}
+div #tips {
+  width: 600px;
+  border: 2px solid whitesmoke;
+  position: relative;
+  left: 950px;
+  top: 50px;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=game.css.map */
