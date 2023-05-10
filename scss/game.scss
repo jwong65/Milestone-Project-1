@@ -5,7 +5,7 @@ body{
     background-color: $backgroundprimary;
 }
 div{
-    color: $secondarygametext;
+    color: $gametext;
     text-align: center;
     @include samepadding(15px);
     .characterinfo{
@@ -27,7 +27,7 @@ div{
 #info{
     color: $secondarygametext;
     position: absolute;
-    top: 205px;
+    top: 305px;
     width: 850px;
     background-color: $backgroundsecondary;
 }

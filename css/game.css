@@ -2,7 +2,8 @@
   border: 2px solid black;
   z-index: 1;
   position: relative;
-  width: 1px;
+  left: 5em;
+  width: 1em;
   text-align: center;
   background-color: red;
 }
@@ -12,7 +13,7 @@ body {
 }
 
 div {
-  color: rgb(9, 11, 12);
+  color: aliceblue;
   text-align: center;
   padding: 15px 15px 15px 15px;
 }
@@ -21,6 +22,7 @@ div .characterinfo {
 }
 
 #tips {
+  color: aliceblue;
   width: 600px;
   border: 2px solid aliceblue;
   position: relative;
@@ -36,7 +38,7 @@ div .characterinfo {
 #info {
   color: rgb(9, 11, 12);
   position: absolute;
-  top: 205px;
+  top: 305px;
   width: 850px;
   background-color: bisque;
 }
