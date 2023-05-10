@@ -1,9 +1,10 @@
 @use "health";
 @import "colors";
 @import "utilities";
-
-div{
+body{
     background-color: $backgroundprimary;
+}
+div{
     color: $secondarygametext;
     text-align: center;
     @include samepadding(15px);
