@@ -64,6 +64,7 @@ function newHand(){
     hand.style.justifyContent = 'space-evenly'
     //hand.style.justifyContent ='center'
     hand.style.zIndex= 0
+    hand.style.color = 'rgb(9, 11, 12)'
 
     hand.style.position ='relative'
     hand.style.bottom = "250px"
