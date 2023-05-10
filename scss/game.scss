@@ -4,25 +4,13 @@
 
 div{
     background-color: $backgroundprimary;
-    color: $gametext;
+    color: $secondarygametext;
     text-align: center;
     @include samepadding(15px);
     .characterinfo{
         color:$secondarygametext;
     }
-    #opponent{
-        position: relative;
-        left: 20px;
-        z-index: 0;
-        @include squaresides(200px)
-    }
-    #player{
-        position: relative;
-        left: 1150px;
-        top: 75px;
-        z-index: 0;
-        @include squaresides(200px)
-    }
+    
     #info{
         color: $secondarygametext;
         position: absolute;
@@ -38,7 +26,24 @@ div{
         top: 50px;
         font-weight: bold;
     }
+    .hand{
+        color: $secondarygametext;
+    }
 
+}
+#opponent{
+    color: $primaryfontcolor;
+    position: relative;
+    left: 20px;
+    z-index: 0;
+    @include squaresides(200px)
+}
+#player{
+    position: relative;
+    left: 1150px;
+    top: 75px;
+    z-index: 0;
+    @include squaresides(200px)
 }
 #showdeck, #draw, #rules, #endturn, #showoppturn, #newgameIn{
     position: absolute;

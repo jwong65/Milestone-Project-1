@@ -9,29 +9,15 @@
 
 div {
   background-color: #435c8a;
-  color: whitesmoke;
+  color: rgb(9, 11, 12);
   text-align: center;
   padding: 15px 15px 15px 15px;
 }
 div .characterinfo {
-  color: aliceblue;
-}
-div #opponent {
-  position: relative;
-  left: 20px;
-  z-index: 0;
-  width: 200px;
-  height: 200px;
-}
-div #player {
-  position: relative;
-  left: 1150px;
-  top: 75px;
-  z-index: 0;
-  width: 200px;
-  height: 200px;
+  color: rgb(9, 11, 12);
 }
 div #info {
+  color: rgb(9, 11, 12);
   position: absolute;
   top: 355px;
   width: 850px;
@@ -39,17 +25,58 @@ div #info {
 }
 div #tips {
   width: 600px;
-  border: 2px solid whitesmoke;
+  border: 2px solid aliceblue;
   position: relative;
   left: 950px;
   top: 50px;
   font-weight: bold;
+}
+div .hand {
+  color: rgb(9, 11, 12);
+}
+
+#opponent {
+  color: azure;
+  position: relative;
+  left: 20px;
+  z-index: 0;
+  width: 200px;
+  height: 200px;
+}
+
+#player {
+  position: relative;
+  left: 1150px;
+  top: 75px;
+  z-index: 0;
+  width: 200px;
+  height: 200px;
 }
 
 #showdeck, #draw, #rules, #endturn, #showoppturn, #newgameIn {
   position: absolute;
   bottom: 100px;
   z-index: 1;
+}
+
+#draw {
+  left: 100px;
+}
+
+#rules {
+  left: 150px;
+}
+
+#endturn {
+  left: 200px;
+}
+
+#showoppturn {
+  left: 275px;
+}
+
+#newgameIn {
+  left: 550px;
 }
 
 /*# sourceMappingURL=game.css.map */
