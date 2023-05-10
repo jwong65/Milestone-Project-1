@@ -19,14 +19,8 @@ div {
 div .characterinfo {
   color: rgb(9, 11, 12);
 }
-div #info {
-  color: rgb(9, 11, 12);
-  position: absolute;
-  top: 355px;
-  width: 850px;
-  background-color: bisque;
-}
-div #tips {
+
+#tips {
   width: 600px;
   border: 2px solid aliceblue;
   position: relative;
@@ -34,8 +28,17 @@ div #tips {
   top: 50px;
   font-weight: bold;
 }
-div .hand {
+
+.hand {
   color: rgb(9, 11, 12);
+}
+
+#info {
+  color: rgb(9, 11, 12);
+  position: absolute;
+  top: 205px;
+  width: 850px;
+  background-color: bisque;
 }
 
 #opponent {
@@ -48,6 +51,7 @@ div .hand {
 }
 
 #player {
+  color: azure;
   position: relative;
   left: 1150px;
   top: 75px;

@@ -10,27 +10,27 @@ div{
     @include samepadding(15px);
     .characterinfo{
         color:$secondarygametext;
-    }
-    
-    #info{
-        color: $secondarygametext;
-        position: absolute;
-        top: 355px;
-        width: 850px;
-        background-color: $backgroundsecondary;
-    }
-    #tips{
-        width:600px;
-        border: 2px solid $gametext;
-        position: relative;
-        left: 950px;
-        top: 50px;
-        font-weight: bold;
-    }
-    .hand{
-        color: $secondarygametext;
-    }
+    }    
+}
+#tips{
+    width:600px;
+    border: 2px solid $gametext;
+    position: relative;
+    left: 950px;
+    top: 50px;
+    font-weight: bold;
+}
+.hand{
+    color: $secondarygametext;
+}
 
+
+#info{
+    color: $secondarygametext;
+    position: absolute;
+    top: 205px;
+    width: 850px;
+    background-color: $backgroundsecondary;
 }
 #opponent{
     color: $primaryfontcolor;
@@ -40,6 +40,7 @@ div{
     @include squaresides(200px)
 }
 #player{
+    color: $primaryfontcolor;
     position: relative;
     left: 1150px;
     top: 75px;
@@ -52,17 +53,17 @@ div{
     z-index: 1;
 }
 #draw{
-    left: 100px;
+    @include leftbutton(100px)
 }
 #rules{
-    left:150px;
+    @include leftbutton(150px)
 }
 #endturn{
-    left: 200px;
+    @include leftbutton(200px)
 }
 #showoppturn{
-    left:275px;
+    @include leftbutton(275px)
 }
 #newgameIn{
-    left: 550px;
+    @include leftbutton(550px)
 }

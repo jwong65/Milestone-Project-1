@@ -16,3 +16,7 @@
 @mixin samepadding($value){
     padding: $value $value $value $value
 }
+
+@mixin leftbutton($value){
+    left: $value
+}
