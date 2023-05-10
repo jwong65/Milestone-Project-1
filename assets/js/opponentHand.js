@@ -12,7 +12,7 @@ function oppHand(){
     document.body.append(oppHand)
     oppHand.style.position='relative'
     oppHand.style.left ="350px"
-    oppHand.style.bottom = "650px"
+    oppHand.style.bottom = "575px"
 
     return oppHand
 }
